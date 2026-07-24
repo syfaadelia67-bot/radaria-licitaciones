@@ -1,6 +1,8 @@
 {
-  "status": "awaiting_first_fetch",
+  "status": "live",
   "source": "TED Search API v3",
-  "retrieved_at": null,
-  "record_count": 0
+  "endpoint": "https://api.ted.europa.eu/v3/notices/search",
+  "query": "publication-date >= 20260710 sort by publication-date DESC",
+  "retrieved_at": "2026-07-24T01:35:48+00:00",
+  "record_count": 37
 }
