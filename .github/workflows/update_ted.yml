@@ -50,6 +50,8 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      SITE_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -57,6 +59,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Show resolved publication target
+        run: echo "Publishing canonical assets for ${SITE_BASE_URL}"
       - name: Fetch into temporary files
         run: |
           mkdir -p /tmp/tendersignal-live
@@ -91,32 +95,43 @@ jobs:
           python scripts/generate_site.py \
             --data /tmp/tendersignal-live/opportunities.json \
             --metadata /tmp/tendersignal-live/metadata.json \
-            --output-root .
+            --output-root . \
+            --base-url "$SITE_BASE_URL"
       - name: Generate public market brief and reusable posts
         run: |
           python scripts/generate_brief.py \
             --data /tmp/tendersignal-live/opportunities.json \
             --metadata /tmp/tendersignal-live/metadata.json \
-            --output-root .
+            --output-root . \
+            --base-url "$SITE_BASE_URL"
+      - name: Generate crawler metadata
+        run: |
+          printf 'User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n' "$SITE_BASE_URL" > robots.txt
       - name: Verify generated output
         run: |
           test -s sitemap.xml
           test -s feed.xml
+          test -s robots.txt
           test -s brief/index.html
           test -s brief/latest.md
           test -s distribution/latest-posts.md
           test -s brief-sitemap.xml
           test -s data/live/translation-cache.json
           test -s data/live/translation-status.json
+          grep -F "Sitemap: ${SITE_BASE_URL}/sitemap.xml" robots.txt
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
           site = json.loads(Path('data/live/generated-manifest.json').read_text(encoding='utf-8'))
           brief = json.loads(Path('data/live/brief-manifest.json').read_text(encoding='utf-8'))
           records = json.loads(Path('data/live/opportunities.json').read_text(encoding='utf-8'))
           translation = json.loads(Path('data/live/translation-status.json').read_text(encoding='utf-8'))
+          base_url = os.environ['SITE_BASE_URL'].rstrip('/')
           assert site['record_count'] > 0
           assert brief['record_count'] == site['record_count']
+          assert brief['brief_url'] == f'{base_url}/brief/'
+          assert all(page['url'].startswith(f'{base_url}/') for page in site['pages'])
           assert translation['record_count'] == site['record_count']
           assert 0 <= translation['english_display_count'] <= translation['record_count']
           assert all(not (len(item['country']) in (2, 3) and item['country'].isupper()) for item in records)
@@ -128,16 +143,16 @@ jobs:
               assert Path(page['path']).is_file(), page['path']
           for generated in brief['files']:
               assert Path(generated).is_file(), generated
-          print(f"Verified {site['record_count']} pages plus bounded English layer and market brief")
+          print(f"Verified {site['record_count']} pages for {base_url} plus bounded English layer and market brief")
           PY
       - name: Commit changed data, pages and distribution assets
         run: |
-          if git diff --quiet -- data/live opportunities sitemap.xml feed.xml brief brief-sitemap.xml distribution; then
+          if git diff --quiet -- data/live opportunities sitemap.xml feed.xml robots.txt brief brief-sitemap.xml distribution; then
             echo "No live data or generated-output changes"
             exit 0
           fi
           git config user.name "tendersignal-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/live opportunities sitemap.xml feed.xml brief brief-sitemap.xml distribution
+          git add data/live opportunities sitemap.xml feed.xml robots.txt brief brief-sitemap.xml distribution
           git commit -m "Update live TED opportunities, English layer and distribution assets"
           git push
