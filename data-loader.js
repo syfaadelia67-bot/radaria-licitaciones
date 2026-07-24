@@ -62,6 +62,17 @@
     return `${String(title || "").trim()}\u0000${String(country || "").trim()}`;
   }
 
+  function translationPresentation(record) {
+    const status = record?.translation?.status;
+    if (status === "machine_translated") {
+      return { label: "LIVE · EN AI", title: "English machine translation; original preserved on the detail page" };
+    }
+    if (status === "source_english") {
+      return { label: "LIVE · EN", title: "Original TED content is in English" };
+    }
+    return { label: "LIVE · ORIGINAL", title: "Original-language content; English translation not available yet" };
+  }
+
   function linkLiveCards() {
     if (state.mode !== "live" || !Array.isArray(state.data)) return;
     const records = new Map(state.data.map(record => [recordKey(record.title, record.country), record]));
@@ -70,6 +81,18 @@
       const country = card.querySelector(".country")?.textContent;
       const record = records.get(recordKey(title, country));
       if (!record) return;
+
+      const badge = card.querySelector(".demo-badge");
+      if (badge) {
+        const presentation = translationPresentation(record);
+        if (badge.textContent !== presentation.label) badge.textContent = presentation.label;
+        if (badge.title !== presentation.title) badge.title = presentation.title;
+        if (badge.dataset.mode !== "live") badge.dataset.mode = "live";
+        if (badge.dataset.translation !== record?.translation?.status) {
+          badge.dataset.translation = record?.translation?.status || "original_only";
+        }
+      }
+
       let detailLink = card.querySelector(".detail-link");
       if (!detailLink) {
         detailLink = document.createElement("a");
@@ -91,19 +114,20 @@
         const timestamp = state.metadata?.retrieved_at
           ? new Date(state.metadata.retrieved_at).toLocaleString()
           : "unknown";
-        nextText = `LIVE DATA · ${state.data.length} official TED notices · Last verified update: ${timestamp}`;
+        const englishCount = state.data.filter(item => ["machine_translated", "source_english"].includes(item?.translation?.status)).length;
+        nextText = `LIVE DATA · ${state.data.length} official TED notices · ${englishCount} available in English · Last verified update: ${timestamp}`;
       } else {
         nextText = "DEMO DATA · Live TED data is not available yet. All records shown are synthetic demonstrations.";
       }
       if (disclaimer.textContent !== nextText) disclaimer.textContent = nextText;
     }
 
-    const label = state.mode === "live" ? "LIVE" : "DEMO";
-    document.querySelectorAll(".demo-badge").forEach(badge => {
-      // Avoid a self-triggering MutationObserver loop: text is changed only when needed.
-      if (badge.textContent !== label) badge.textContent = label;
-      if (badge.dataset.mode !== state.mode) badge.dataset.mode = state.mode;
-    });
+    if (state.mode === "demo") {
+      document.querySelectorAll(".demo-badge").forEach(badge => {
+        if (badge.textContent !== "DEMO") badge.textContent = "DEMO";
+        if (badge.dataset.mode !== "demo") badge.dataset.mode = "demo";
+      });
+    }
     linkLiveCards();
   }
 
