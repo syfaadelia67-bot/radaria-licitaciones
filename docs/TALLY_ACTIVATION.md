@@ -35,12 +35,26 @@ Add hidden fields with these exact case-sensitive names:
 ## Configure operations
 
 1. Publish the form.
-2. Enable **Self email notifications**.
-3. Connect the free **Google Sheets** integration.
-4. Enable duplicate prevention and reCAPTCHA if available in form settings.
-5. Use this thank-you message:
+2. Enable **Self email notifications**. This is the required alert channel.
+3. Treat Tally's **Submissions** dashboard as the primary lead register.
+4. Connect **Google Sheets only when the account permits it**. This integration is optional and must never block activation.
+5. Enable duplicate prevention and reCAPTCHA if available in form settings.
+6. Use this thank-you message:
 
 > Application received. TenderSignal will only contact you about this validation request and any founder-plan interest you selected. No payment has been charged.
+
+### Restricted institutional Google accounts
+
+If Google authorization requires an administrator:
+
+- do not request an exception or share credentials;
+- leave Google Sheets disconnected;
+- verify each application in Tally's Submissions dashboard;
+- use the free self-email notification as the immediate alert;
+- export an individual submission as PDF from Tally when a portable record is needed;
+- reconsider a spreadsheet connection later using an owner-controlled account only if operational volume justifies it.
+
+This fallback still provides real external lead capture. A spreadsheet is an operational convenience, not a launch requirement.
 
 ## Activate the website
 
