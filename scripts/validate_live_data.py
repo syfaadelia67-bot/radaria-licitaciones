@@ -16,6 +16,7 @@ REQUIRED_FIELDS = {
     "keywords", "value", "currency", "published_at", "deadline", "source",
     "source_url", "status", "provenance",
 }
+TRANSLATION_STATUSES = {"source_english", "machine_translated", "original_only"}
 
 
 def valid_url(value: object) -> bool:
@@ -31,6 +32,35 @@ def valid_date(value: object) -> bool:
         return True
     except ValueError:
         return False
+
+
+def validate_translation(record: dict, record_id: str, errors: list[str]) -> None:
+    translation = record.get("translation")
+    if translation is None:
+        return
+    if not isinstance(translation, dict):
+        errors.append(f"{record_id}: translation must be an object")
+        return
+    status = translation.get("status")
+    if status not in TRANSLATION_STATUSES:
+        errors.append(f"{record_id}: invalid translation status")
+    source_hash = str(translation.get("source_hash", ""))
+    if not re.fullmatch(r"[0-9a-f]{64}", source_hash):
+        errors.append(f"{record_id}: invalid translation source_hash")
+    display_language = translation.get("display_language")
+    if status in {"source_english", "machine_translated"} and display_language != "en":
+        errors.append(f"{record_id}: English content requires display_language=en")
+    if status == "original_only" and display_language != "original":
+        errors.append(f"{record_id}: untranslated content requires display_language=original")
+    if status == "machine_translated":
+        if not str(record.get("original_title", "")).strip() or not str(record.get("original_description", "")).strip():
+            errors.append(f"{record_id}: machine translation must preserve original title and description")
+        if translation.get("provider") != "GitHub Models" or not translation.get("model"):
+            errors.append(f"{record_id}: incomplete machine-translation provenance")
+        if not translation.get("translated_at"):
+            errors.append(f"{record_id}: machine translation requires translated_at")
+    elif "original_title" in record or "original_description" in record:
+        errors.append(f"{record_id}: original copies are only expected for machine translations")
 
 
 def main() -> int:
@@ -82,6 +112,7 @@ def main() -> int:
         provenance = record.get("provenance")
         if not isinstance(provenance, dict) or not provenance.get("publication_number") or not provenance.get("retrieved_at"):
             errors.append(f"{record_id}: incomplete provenance")
+        validate_translation(record, record_id, errors)
 
     if errors:
         print("Live data validation failed:", file=sys.stderr)
