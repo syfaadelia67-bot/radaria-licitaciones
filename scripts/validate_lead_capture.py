@@ -40,8 +40,16 @@ def main() -> int:
 
     if "https://tally.so/r/${config.formId}" not in capture:
         fail("lead router must build the documented Tally route from public configuration")
-    if "originPage" not in capture or "source" not in capture or "offer" not in capture:
-        fail("lead router must preserve attribution fields")
+
+    attribution_tokens = (
+        'incoming.get("source")',
+        'incoming.get("originPage")',
+        'incoming.get("offer")',
+        'incoming.get("opportunityId")',
+    )
+    for token in attribution_tokens:
+        if token not in capture:
+            fail(f"lead router must preserve inbound attribution: {token}")
 
     enabled = re.search(r'enabled:\s*(true|false)', config)
     form_id = re.search(r'formId:\s*"([^"]*)"', config)
@@ -57,7 +65,7 @@ def main() -> int:
     if re.search(secret_pattern, combined):
         fail("possible secret detected in public lead-capture files")
 
-    print("Lead capture validation passed: no local fake signup, no secrets, disclosures present.")
+    print("Lead capture validation passed: attribution preserved, no fake signup, no secrets.")
     return 0
 
 
