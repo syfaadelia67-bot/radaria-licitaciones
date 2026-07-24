@@ -6,6 +6,8 @@ on:
     paths:
       - "scripts/fetch_ted.py"
       - "scripts/validate_live_data.py"
+      - "scripts/generate_site.py"
+      - "data-loader.js"
       - "tests/**"
       - ".github/workflows/update_ted.yml"
   pull_request:
@@ -29,10 +31,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Test TED normalization
+      - name: Run normalization and site-generation tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Compile Python scripts
-        run: python -m py_compile scripts/fetch_ted.py scripts/validate_live_data.py
+        run: python -m py_compile scripts/fetch_ted.py scripts/validate_live_data.py scripts/generate_site.py
+      - name: Check JavaScript syntax
+        run: node --check data-loader.js
 
   update:
     if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
@@ -59,14 +63,33 @@ jobs:
         run: |
           cp /tmp/tendersignal-live/opportunities.json data/live/opportunities.json
           cp /tmp/tendersignal-live/metadata.json data/live/metadata.json
-      - name: Commit changed dataset
+      - name: Generate stable pages and discovery feeds
         run: |
-          if git diff --quiet -- data/live; then
-            echo "No live data changes"
+          python scripts/generate_site.py \
+            --data /tmp/tendersignal-live/opportunities.json \
+            --metadata /tmp/tendersignal-live/metadata.json \
+            --output-root .
+      - name: Verify generated output
+        run: |
+          test -s sitemap.xml
+          test -s feed.xml
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          manifest = json.loads(Path('data/live/generated-manifest.json').read_text(encoding='utf-8'))
+          assert manifest['record_count'] > 0
+          for page in manifest['pages']:
+              assert Path(page['path']).is_file(), page['path']
+          print(f"Verified {manifest['record_count']} generated pages")
+          PY
+      - name: Commit changed data and pages
+        run: |
+          if git diff --quiet -- data/live opportunities sitemap.xml feed.xml; then
+            echo "No live data or generated-page changes"
             exit 0
           fi
           git config user.name "tendersignal-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/live
-          git commit -m "Update live TED opportunities"
+          git add data/live opportunities sitemap.xml feed.xml
+          git commit -m "Update live TED opportunities and discovery pages"
           git push

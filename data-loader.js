@@ -38,6 +38,30 @@
     return nativeFetch(input, init);
   };
 
+  function recordKey(title, country) {
+    return `${String(title || "").trim()}\u0000${String(country || "").trim()}`;
+  }
+
+  function linkLiveCards() {
+    if (state.mode !== "live" || !Array.isArray(state.data)) return;
+    const records = new Map(state.data.map(record => [recordKey(record.title, record.country), record]));
+    document.querySelectorAll(".opportunity-card").forEach(card => {
+      const title = card.querySelector(".title")?.textContent;
+      const country = card.querySelector(".country")?.textContent;
+      const record = records.get(recordKey(title, country));
+      if (!record) return;
+      let detailLink = card.querySelector(".detail-link");
+      if (!detailLink) {
+        detailLink = document.createElement("a");
+        detailLink.className = "source-link detail-link";
+        detailLink.textContent = "View TenderSignal detail page";
+        const officialLink = card.querySelector(".source-link");
+        card.insertBefore(detailLink, officialLink || null);
+      }
+      detailLink.href = `opportunities/${encodeURIComponent(record.id)}/`;
+    });
+  }
+
   function updateLabels() {
     const disclaimer = document.querySelector(".disclaimer");
     if (disclaimer) {
@@ -54,6 +78,7 @@
       badge.textContent = state.mode === "live" ? "LIVE" : "DEMO";
       badge.dataset.mode = state.mode;
     });
+    linkLiveCards();
   }
 
   document.addEventListener("DOMContentLoaded", async () => {
