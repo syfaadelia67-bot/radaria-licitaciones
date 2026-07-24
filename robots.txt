@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syfaadelia67-bot.github.io/radaria-licitaciones/sitemap.xml
