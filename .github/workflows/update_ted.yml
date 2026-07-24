@@ -9,6 +9,7 @@ on:
       - "scripts/validate_live_data.py"
       - "scripts/generate_site.py"
       - "scripts/generate_brief.py"
+      - "scripts/score_founder_application.py"
       - "data-loader.js"
       - "tests/**"
       - ".github/workflows/update_ted.yml"
@@ -36,7 +37,7 @@ jobs:
       - name: Run normalization and generation tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Compile Python scripts
-        run: python -m py_compile scripts/fetch_ted.py scripts/normalize_country_names.py scripts/validate_live_data.py scripts/generate_site.py scripts/generate_brief.py
+        run: python -m py_compile scripts/fetch_ted.py scripts/normalize_country_names.py scripts/validate_live_data.py scripts/generate_site.py scripts/generate_brief.py scripts/score_founder_application.py
       - name: Check JavaScript syntax
         run: node --check data-loader.js
 
