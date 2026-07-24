@@ -1,0 +1,72 @@
+name: Update TED live data
+
+on:
+  push:
+    branches: [main, "agent/**"]
+    paths:
+      - "scripts/fetch_ted.py"
+      - "scripts/validate_live_data.py"
+      - "tests/**"
+      - ".github/workflows/update_ted.yml"
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ted-live-data
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test TED normalization
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+      - name: Compile Python scripts
+        run: python -m py_compile scripts/fetch_ted.py scripts/validate_live_data.py
+
+  update:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch into temporary files
+        run: |
+          mkdir -p /tmp/tendersignal-live
+          python scripts/fetch_ted.py \
+            --days 14 \
+            --limit 100 \
+            --output /tmp/tendersignal-live/opportunities.json \
+            --metadata /tmp/tendersignal-live/metadata.json
+      - name: Validate before replacing last known good data
+        run: python scripts/validate_live_data.py /tmp/tendersignal-live/opportunities.json
+      - name: Publish validated data
+        run: |
+          cp /tmp/tendersignal-live/opportunities.json data/live/opportunities.json
+          cp /tmp/tendersignal-live/metadata.json data/live/metadata.json
+      - name: Commit changed dataset
+        run: |
+          if git diff --quiet -- data/live; then
+            echo "No live data changes"
+            exit 0
+          fi
+          git config user.name "tendersignal-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live
+          git commit -m "Update live TED opportunities"
+          git push
