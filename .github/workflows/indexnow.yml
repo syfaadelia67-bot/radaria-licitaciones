@@ -26,6 +26,9 @@ concurrency:
   group: indexnow-discovery
   cancel-in-progress: true
 
+env:
+  SITE_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -42,14 +45,21 @@ jobs:
         run: |
           python scripts/submit_indexnow.py \
             --key-file edf2dc33685f586f1cc9325bcd6cc23d.txt \
+            --base-url "$SITE_BASE_URL" \
             --dry-run > /tmp/indexnow-payload.json
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
+          from urllib.parse import urlparse
           payload = json.loads(Path('/tmp/indexnow-payload.json').read_text(encoding='utf-8'))
+          base_url = os.environ['SITE_BASE_URL'].rstrip('/')
           assert payload['urlList']
           assert len(payload['urlList']) == len(set(payload['urlList']))
-          print(f"Validated {len(payload['urlList'])} canonical URLs")
+          assert payload['host'] == urlparse(base_url).netloc
+          assert payload['keyLocation'].startswith(f'{base_url}/')
+          assert all(url.startswith(f'{base_url}/') for url in payload['urlList'])
+          print(f"Validated {len(payload['urlList'])} canonical URLs for {base_url}")
           PY
 
   submit:
@@ -65,5 +75,6 @@ jobs:
         run: |
           python scripts/submit_indexnow.py \
             --key-file edf2dc33685f586f1cc9325bcd6cc23d.txt \
+            --base-url "$SITE_BASE_URL" \
             --attempts 6 \
             --delay-seconds 60
