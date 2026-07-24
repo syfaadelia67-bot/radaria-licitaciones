@@ -24,5 +24,15 @@ jobs:
       - name: Validate opportunity data
         run: python scripts/validate_data.py
 
+      - name: Validate lead capture integrity
+        run: python scripts/validate_lead_capture.py
+
       - name: Check JavaScript syntax
-        run: node --check app.js
+        run: |
+          node --check app.js
+          node --check data-loader.js
+          node --check lead-config.js
+          node --check lead-capture.js
+
+      - name: Compile Python validation scripts
+        run: python -m py_compile scripts/validate_data.py scripts/validate_lead_capture.py
