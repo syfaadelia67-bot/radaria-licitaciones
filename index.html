@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TenderSignal ranks public procurement opportunities against your supplier profile.">
+  <title>TenderSignal — Find bids worth pursuing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="TenderSignal home">
+      <span class="brand-mark">TS</span>
+      <span>TenderSignal</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#opportunities" data-i18n="nav_opportunities">Opportunities</a>
+      <a href="#how-it-works" data-i18n="nav_how">How it works</a>
+      <button id="languageButton" class="text-button" type="button" aria-label="Switch language">ES</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">AI-ranked public procurement</p>
+        <h1 data-i18n="hero_title">Stop reading every tender. Find the ones worth pursuing.</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Describe what your company sells. TenderSignal scores public opportunities by fit, urgency and commercial value.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#profile" data-i18n="build_profile">Build my supplier profile</a>
+          <a class="button secondary" href="#opportunities" data-i18n="browse_demo">Browse demo opportunities</a>
+        </div>
+        <p class="disclaimer" data-i18n="demo_disclaimer">Prototype: all opportunities shown are synthetic demonstration records, not active tenders.</p>
+      </div>
+      <aside class="score-preview" aria-label="Example opportunity score">
+        <div class="score-ring"><strong>89</strong><span>/100</span></div>
+        <div>
+          <span class="pill success" data-i18n="strong_fit">Strong fit</span>
+          <h2 data-i18n="preview_title">Cloud security assessment</h2>
+          <ul>
+            <li data-i18n="preview_1">Keyword match: cloud, security</li>
+            <li data-i18n="preview_2">Preferred market: United Kingdom</li>
+            <li data-i18n="preview_3">Deadline: 21 days</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="profile" class="panel profile-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="profile_eyebrow">Your matching criteria</p>
+          <h2 data-i18n="profile_title">Create a lightweight supplier profile</h2>
+        </div>
+        <button id="resetProfile" class="text-button" type="button" data-i18n="reset">Reset</button>
+      </div>
+
+      <form id="profileForm" class="profile-grid">
+        <label>
+          <span data-i18n="keywords">Products, services or keywords</span>
+          <input id="profileKeywords" type="text" value="software, cloud, cybersecurity" placeholder="software, logistics, consulting">
+        </label>
+        <label>
+          <span data-i18n="preferred_category">Preferred category</span>
+          <select id="profileCategory">
+            <option value="" data-i18n="any_category">Any category</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="preferred_country">Preferred market</span>
+          <select id="profileCountry">
+            <option value="" data-i18n="any_country">Any country</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="capacity">Maximum contract size</span>
+          <select id="profileCapacity">
+            <option value="0" data-i18n="no_limit">No limit</option>
+            <option value="50000">50,000</option>
+            <option value="250000" selected>250,000</option>
+            <option value="1000000">1,000,000</option>
+          </select>
+        </label>
+        <button class="button primary profile-submit" type="submit" data-i18n="rank_opportunities">Rank opportunities</button>
+      </form>
+    </section>
+
+    <section id="opportunities" class="opportunity-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="market_feed">Market feed</p>
+          <h2 data-i18n="opportunities_title">Ranked opportunities</h2>
+          <p id="resultSummary" class="muted" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="filter-bar" aria-label="Opportunity filters">
+        <label class="search-field">
+          <span class="sr-only" data-i18n="search">Search</span>
+          <input id="searchInput" type="search" placeholder="Search opportunities">
+        </label>
+        <select id="countryFilter" aria-label="Country filter">
+          <option value="" data-i18n="all_countries">All countries</option>
+        </select>
+        <select id="categoryFilter" aria-label="Category filter">
+          <option value="" data-i18n="all_categories">All categories</option>
+        </select>
+        <select id="deadlineFilter" aria-label="Deadline filter">
+          <option value="0" data-i18n="any_deadline">Any deadline</option>
+          <option value="14" data-i18n="next_14">Next 14 days</option>
+          <option value="30" data-i18n="next_30">Next 30 days</option>
+          <option value="60" data-i18n="next_60">Next 60 days</option>
+        </select>
+        <input id="minValueFilter" type="number" min="0" step="1000" placeholder="Minimum value" aria-label="Minimum contract value">
+      </div>
+
+      <div id="opportunityGrid" class="opportunity-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <h3 data-i18n="empty_title">No matching opportunities</h3>
+        <p data-i18n="empty_body">Broaden the filters or update your supplier profile.</p>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="how-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="transparent_scoring">Transparent scoring</p>
+          <h2 data-i18n="how_title">A recommendation you can audit</h2>
+        </div>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3 data-i18n="step1_title">Normalize</h3><p data-i18n="step1_body">Convert official notices from different markets into one consistent schema.</p></article>
+        <article><span>02</span><h3 data-i18n="step2_title">Match</h3><p data-i18n="step2_body">Compare keywords, category, market, value and deadline with your profile.</p></article>
+        <article><span>03</span><h3 data-i18n="step3_title">Explain</h3><p data-i18n="step3_body">Show exactly which factors increased or reduced each relevance score.</p></article>
+      </div>
+    </section>
+
+    <section class="alert-section">
+      <div>
+        <p class="eyebrow" data-i18n="founder_access">Founder access</p>
+        <h2 data-i18n="alert_title">Get the weekly ranked opportunity report</h2>
+        <p data-i18n="alert_body">Join the validation list. No payment is collected in this prototype.</p>
+      </div>
+      <form id="alertForm" class="alert-form">
+        <label class="sr-only" for="emailInput">Email</label>
+        <input id="emailInput" type="email" required placeholder="you@company.com">
+        <button class="button primary" type="submit" data-i18n="join_list">Join validation list</button>
+      </form>
+      <p id="alertMessage" class="form-message" role="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 TenderSignal. <span data-i18n="footer_note">Built as a zero-capital AI company experiment.</span></p>
+    <a href="https://github.com/syfaadelia67-bot/radaria-licitaciones" rel="noreferrer">GitHub</a>
+  </footer>
+
+  <template id="opportunityTemplate">
+    <article class="opportunity-card">
+      <div class="card-topline">
+        <span class="demo-badge">DEMO</span>
+        <span class="score-badge"><strong class="score-value"></strong>/100</span>
+      </div>
+      <p class="card-meta"><span class="country"></span> · <span class="category"></span></p>
+      <h3 class="title"></h3>
+      <p class="description"></p>
+      <dl class="facts">
+        <div><dt data-i18n="value">Value</dt><dd class="value"></dd></div>
+        <div><dt data-i18n="deadline">Deadline</dt><dd class="deadline"></dd></div>
+        <div><dt data-i18n="source">Source</dt><dd class="source"></dd></div>
+      </dl>
+      <div class="score-explanation"></div>
+      <a class="source-link" target="_blank" rel="noreferrer" data-i18n="visit_source">Visit official portal</a>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
