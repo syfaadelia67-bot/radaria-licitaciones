@@ -123,8 +123,8 @@ def request_translations(records: list[dict[str, Any]], token: str, model: str, 
     prompt = (
         "Translate every procurement notice into faithful, plain English. Do not summarize, omit, "
         "interpret or add facts. Preserve all personal and organisation names, product names, legal "
-        "references, identifiers, dates, quantities, percentages, currencies and monetary values. "
-        "Return one JSON object only with this exact shape: "
+        "references, identifiers, dates, quantities, percentages, currencies and monetary values "
+        "with exactly the same numeric formatting. Return one JSON object only with this exact shape: "
         "{\"translations\":[{\"id\":\"...\",\"source_language\":\"English language name\","
         "\"title_en\":\"...\",\"description_en\":\"...\"}]}. "
         "Return exactly one item for every input id in the same order. Input: "
@@ -236,7 +236,15 @@ def translate_records(
             try:
                 raw_translations = request_translations(batch, token, model)
                 by_id = {clean_text(item.get("id")): item for item in raw_translations if isinstance(item, dict)}
+            except (HTTPError, URLError, TimeoutError, KeyError, IndexError, ValueError, json.JSONDecodeError) as exc:
+                print(f"WARNING: English translation request failed; preserving batch originals: {exc}", file=sys.stderr)
                 for record in batch:
+                    mark_original_only(record)
+                    stats["original_only"] += 1
+                continue
+
+            for record in batch:
+                try:
                     validated = validate_translation(record, by_id.get(str(record.get("id")), {}))
                     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
                     entry = {
@@ -248,9 +256,8 @@ def translate_records(
                     cache[str(record["id"])] = entry
                     apply_entry(record, entry, model)
                     stats["translated"] += 1
-            except (HTTPError, URLError, TimeoutError, KeyError, IndexError, ValueError, json.JSONDecodeError) as exc:
-                print(f"WARNING: English translation batch failed; preserving originals: {exc}", file=sys.stderr)
-                for record in batch:
+                except (KeyError, ValueError) as exc:
+                    print(f"WARNING: rejected English translation for {record.get('id')}: {exc}", file=sys.stderr)
                     mark_original_only(record)
                     stats["original_only"] += 1
     else:
@@ -282,10 +289,7 @@ def main() -> int:
     output = args.output or args.path
     atomic_json(output, translated)
     atomic_json(args.cache, {"version": CACHE_VERSION, "entries": cache})
-    print(
-        "English layer: "
-        + ", ".join(f"{key}={value}" for key, value in stats.items())
-    )
+    print("English layer: " + ", ".join(f"{key}={value}" for key, value in stats.items()))
     return 0
 
 
