@@ -34,7 +34,8 @@ const translations = {
     value: "Value", deadline: "Deadline", source: "Source", visit_source: "Visit official portal",
     footer_note: "Built as a zero-capital AI company experiment.", results: "opportunities shown",
     keyword_match: "keyword match", category_match: "category match", market_match: "preferred market",
-    within_capacity: "within capacity", near_deadline: "deadline approaching", broad_fit: "broad profile fit"
+    within_capacity: "within capacity", near_deadline: "deadline approaching", broad_fit: "broad profile fit",
+    loading: "Loading opportunities…", load_error: "The opportunity feed could not be loaded. Controls remain active; reload the page to retry."
   },
   es: {
     nav_opportunities: "Oportunidades", nav_how: "Cómo funciona", eyebrow: "Contratación pública clasificada por IA",
@@ -59,7 +60,8 @@ const translations = {
     value: "Valor", deadline: "Vencimiento", source: "Fuente", visit_source: "Visitar portal oficial",
     footer_note: "Construido como experimento de empresa IA con capital cero.", results: "oportunidades mostradas",
     keyword_match: "coincidencia de palabras", category_match: "categoría coincidente", market_match: "mercado preferido",
-    within_capacity: "dentro de capacidad", near_deadline: "vencimiento cercano", broad_fit: "encaje general"
+    within_capacity: "dentro de capacidad", near_deadline: "vencimiento cercano", broad_fit: "encaje general",
+    loading: "Cargando oportunidades…", load_error: "No se pudo cargar el listado. Los controles siguen activos; recargá la página para reintentar."
   }
 };
 
@@ -72,20 +74,28 @@ const elements = {
   resetProfile: $("#resetProfile"), language: $("#languageButton")
 };
 
+let eventsBound = false;
+
 function t(key) { return translations[state.language][key] || translations.en[key] || key; }
 function unique(values) { return [...new Set(values)].sort((a, b) => a.localeCompare(b)); }
 function tokenize(text) { return String(text).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean); }
 function daysUntil(value) { return Math.ceil((new Date(value) - new Date()) / 86400000); }
 function formatMoney(value, currency) {
   if (!value || currency === "XXX") return state.language === "es" ? "No informado" : "Not disclosed";
-  return new Intl.NumberFormat(state.language === "es" ? "es-AR" : "en-US", {
-    style: "currency", currency, maximumFractionDigits: 0
-  }).format(value);
+  try {
+    return new Intl.NumberFormat(state.language === "es" ? "es-AR" : "en-US", {
+      style: "currency", currency, maximumFractionDigits: 0
+    }).format(value);
+  } catch (_) {
+    return `${Number(value).toLocaleString()} ${currency || ""}`.trim();
+  }
 }
 function formatDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value || "—";
   return new Intl.DateTimeFormat(state.language === "es" ? "es-AR" : "en-GB", {
     year: "numeric", month: "short", day: "numeric"
-  }).format(new Date(value));
+  }).format(date);
 }
 
 function calculateScore(opportunity) {
@@ -139,8 +149,8 @@ function render() {
     elements.grid.appendChild(fragment);
   });
 
-  elements.empty.hidden = ranked.length > 0;
-  elements.summary.textContent = `${ranked.length} ${t("results")}`;
+  elements.empty.hidden = ranked.length > 0 || state.opportunities.length === 0;
+  elements.summary.textContent = state.opportunities.length ? `${ranked.length} ${t("results")}` : elements.summary.textContent;
   applyTranslations(elements.grid);
 }
 
@@ -160,6 +170,13 @@ function applyTranslations(root = document) {
   elements.minValue.placeholder = state.language === "es" ? "Valor mínimo" : "Minimum value";
 }
 
+function syncProfileControls() {
+  elements.profileKeywords.value = state.profile.keywords.join(", ");
+  elements.profileCategory.value = state.profile.category;
+  elements.profileCountry.value = state.profile.country;
+  elements.profileCapacity.value = String(state.profile.capacity);
+}
+
 function updateLanguage() {
   applyTranslations();
   elements.language.textContent = state.language === "en" ? "ES" : "EN";
@@ -167,19 +184,19 @@ function updateLanguage() {
   populateSelect(elements.category, unique(state.opportunities.map(item => item.category)), "all_categories");
   populateSelect(elements.profileCountry, unique(state.opportunities.map(item => item.country)), "any_country");
   populateSelect(elements.profileCategory, unique(state.opportunities.map(item => item.category)), "any_category");
+  syncProfileControls();
   render();
 }
 
 function saveProfile() { localStorage.setItem("tendersignal-profile", JSON.stringify(state.profile)); }
 function loadProfile() {
   try { Object.assign(state.profile, JSON.parse(localStorage.getItem("tendersignal-profile")) || {}); } catch (_) {}
-  elements.profileKeywords.value = state.profile.keywords.join(", ");
-  elements.profileCategory.value = state.profile.category;
-  elements.profileCountry.value = state.profile.country;
-  elements.profileCapacity.value = String(state.profile.capacity);
+  syncProfileControls();
 }
 
 function bindEvents() {
+  if (eventsBound) return;
+  eventsBound = true;
   [elements.search, elements.country, elements.category, elements.deadline, elements.minValue]
     .forEach(element => element.addEventListener("input", render));
   elements.profileForm.addEventListener("submit", event => {
@@ -197,7 +214,7 @@ function bindEvents() {
   elements.resetProfile.addEventListener("click", () => {
     localStorage.removeItem("tendersignal-profile");
     state.profile = { keywords: ["software", "cloud", "cybersecurity"], category: "", country: "", capacity: 250000 };
-    loadProfile();
+    syncProfileControls();
     render();
   });
   elements.language.addEventListener("click", () => {
@@ -206,18 +223,35 @@ function bindEvents() {
   });
 }
 
-async function init() {
+async function loadOpportunityData(timeoutMs = 10000) {
+  const controller = new AbortController();
+  const timer = window.setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const response = await fetch("data/opportunities.json");
+    const response = await fetch("data/opportunities.json", { cache: "no-store", signal: controller.signal });
     if (!response.ok) throw new Error(`Data request failed: ${response.status}`);
-    state.opportunities = await response.json();
+    const data = await response.json();
+    if (!Array.isArray(data)) throw new Error("Opportunity data must be an array");
+    return data;
+  } finally {
+    window.clearTimeout(timer);
+  }
+}
+
+async function init() {
+  // Progressive enhancement: controls work immediately, even if the data feed is slow or unavailable.
+  loadProfile();
+  bindEvents();
+  applyTranslations();
+  elements.summary.textContent = t("loading");
+  document.documentElement.classList.add("js-ready");
+
+  try {
+    state.opportunities = await loadOpportunityData();
     updateLanguage();
-    loadProfile();
-    bindEvents();
-    render();
   } catch (error) {
     console.error(error);
-    elements.summary.textContent = "Unable to load procurement data.";
+    elements.summary.textContent = t("load_error");
+    elements.empty.hidden = true;
   }
 }
 
