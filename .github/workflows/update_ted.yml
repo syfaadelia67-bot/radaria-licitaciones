@@ -7,6 +7,7 @@ on:
       - "scripts/fetch_ted.py"
       - "scripts/validate_live_data.py"
       - "scripts/generate_site.py"
+      - "scripts/generate_brief.py"
       - "data-loader.js"
       - "tests/**"
       - ".github/workflows/update_ted.yml"
@@ -31,10 +32,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run normalization and site-generation tests
+      - name: Run normalization and generation tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Compile Python scripts
-        run: python -m py_compile scripts/fetch_ted.py scripts/validate_live_data.py scripts/generate_site.py
+        run: python -m py_compile scripts/fetch_ted.py scripts/validate_live_data.py scripts/generate_site.py scripts/generate_brief.py
       - name: Check JavaScript syntax
         run: node --check data-loader.js
 
@@ -69,27 +70,41 @@ jobs:
             --data /tmp/tendersignal-live/opportunities.json \
             --metadata /tmp/tendersignal-live/metadata.json \
             --output-root .
+      - name: Generate public market brief and reusable posts
+        run: |
+          python scripts/generate_brief.py \
+            --data /tmp/tendersignal-live/opportunities.json \
+            --metadata /tmp/tendersignal-live/metadata.json \
+            --output-root .
       - name: Verify generated output
         run: |
           test -s sitemap.xml
           test -s feed.xml
+          test -s brief/index.html
+          test -s brief/latest.md
+          test -s distribution/latest-posts.md
+          test -s brief-sitemap.xml
           python - <<'PY'
           import json
           from pathlib import Path
-          manifest = json.loads(Path('data/live/generated-manifest.json').read_text(encoding='utf-8'))
-          assert manifest['record_count'] > 0
-          for page in manifest['pages']:
+          site = json.loads(Path('data/live/generated-manifest.json').read_text(encoding='utf-8'))
+          brief = json.loads(Path('data/live/brief-manifest.json').read_text(encoding='utf-8'))
+          assert site['record_count'] > 0
+          assert brief['record_count'] == site['record_count']
+          for page in site['pages']:
               assert Path(page['path']).is_file(), page['path']
-          print(f"Verified {manifest['record_count']} generated pages")
+          for generated in brief['files']:
+              assert Path(generated).is_file(), generated
+          print(f"Verified {site['record_count']} pages plus market brief")
           PY
-      - name: Commit changed data and pages
+      - name: Commit changed data, pages and distribution assets
         run: |
-          if git diff --quiet -- data/live opportunities sitemap.xml feed.xml; then
-            echo "No live data or generated-page changes"
+          if git diff --quiet -- data/live opportunities sitemap.xml feed.xml brief brief-sitemap.xml distribution; then
+            echo "No live data or generated-output changes"
             exit 0
           fi
           git config user.name "tendersignal-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/live opportunities sitemap.xml feed.xml
-          git commit -m "Update live TED opportunities and discovery pages"
+          git add data/live opportunities sitemap.xml feed.xml brief brief-sitemap.xml distribution
+          git commit -m "Update live TED opportunities, brief and distribution assets"
           git push
