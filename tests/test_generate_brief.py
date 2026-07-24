@@ -76,7 +76,8 @@ class GenerateBriefTests(unittest.TestCase):
             posts = (root / "distribution/latest-posts.md").read_text(encoding="utf-8")
             self.assertIn("Review each community's rules", posts)
             self.assertNotIn("limited spots", posts.lower())
-            self.assertNotIn("customers", posts.lower())
+            self.assertNotIn("our customers", posts.lower())
+            self.assertNotIn("trusted by", posts.lower())
 
             sitemap = (root / "brief-sitemap.xml").read_text(encoding="utf-8")
             self.assertIn("https://example.test/product/brief/", sitemap)
