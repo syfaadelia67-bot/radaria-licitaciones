@@ -2,24 +2,24 @@
   "totalNoticeCount": 2,
   "notices": [
     {
-      "publication-number": "123456-2026",
-      "publication-date": "2026-07-22",
+      "publication-number": "123456-2099",
+      "publication-date": "2099-07-22",
       "title-proc": {"eng": "Cybersecurity monitoring services"},
       "description-proc": {"eng": "Managed monitoring, threat detection and incident response."},
       "buyer-country": ["BE"],
       "classification-cpv": ["72212732"],
-      "deadline-receipt-tender-date-lot": ["2026-09-15"],
+      "deadline-receipt-tender-date-lot": ["2099-09-15"],
       "estimated-value-proc": [350000],
       "estimated-value-cur-proc": ["EUR"]
     },
     {
-      "publication-number": "123457-2026",
-      "publication-date": "2026-07-21",
+      "publication-number": "123457-2099",
+      "publication-date": "2099-07-21",
       "title-proc": ["Cloud migration advisory"],
       "description-proc": ["Assessment and migration planning for public cloud services."],
       "buyer-country": "DE",
       "classification-cpv": "72222300",
-      "deadline-receipt-tender-date-lot": "2026-10-01",
+      "deadline-receipt-tender-date-lot": "2099-10-01",
       "estimated-value-proc": "125000",
       "estimated-value-cur-proc": "EUR"
     }
