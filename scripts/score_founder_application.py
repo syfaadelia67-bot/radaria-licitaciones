@@ -53,8 +53,13 @@ def validate_input(payload: object) -> dict[str, Any]:
         raise ValueError(
             "Personal contact fields are not accepted by this scoring tool: " + ", ".join(personal)
         )
-    required = ("company", "markets", "products_services", "contract_capacity", "discovery_process", "useful_features", "founder_interest")
-    missing = [field for field in required if not payload.get(field)]
+    required_nonempty = (
+        "company", "markets", "products_services", "contract_capacity",
+        "discovery_process", "founder_interest",
+    )
+    missing = [field for field in required_nonempty if not payload.get(field)]
+    if "useful_features" not in payload:
+        missing.append("useful_features")
     if missing:
         raise ValueError("Missing required non-personal fields: " + ", ".join(missing))
     return payload
@@ -133,15 +138,18 @@ def render_markdown(result: dict[str, Any]) -> str:
     lines.extend(["", "## Evidence by dimension", ""])
     for item in result["dimensions"]:
         lines.append(f"- **{item['name']}: {item['score']}/{item['max']}** — {item['evidence']}")
+
+    lines.extend(["", "## Strengths", ""])
+    lines.extend(f"- {item}" for item in result["strengths"])
+    if not result["strengths"]:
+        lines.append("- No strong dimension identified yet.")
+
+    lines.extend(["", "## Information gaps", ""])
+    lines.extend(f"- {item}" for item in result["gaps"])
+    if not result["gaps"]:
+        lines.append("- No major qualification gap identified.")
+
     lines.extend([
-        "",
-        "## Strengths",
-        "",
-        *(f"- {item}" for item in result["strengths"]),
-        "",
-        "## Information gaps",
-        "",
-        *(f"- {item}" for item in result["gaps"]),
         "",
         "## Recommended next step",
         "",
@@ -152,12 +160,6 @@ def render_markdown(result: dict[str, Any]) -> str:
         "No payment should be requested until the applicant has received useful output and explicitly agrees to a separate payment step. The provisional founder offer is USD 10 for 60 days and must not be described as scarce unless a real operational limit exists.",
         "",
     ])
-    if not result["strengths"]:
-        lines[lines.index("## Strengths") + 2:lines.index("## Information gaps")] = ["- No strong dimension identified yet.", ""]
-    if not result["gaps"]:
-        gap_index = lines.index("## Information gaps")
-        next_index = lines.index("## Recommended next step")
-        lines[gap_index + 2:next_index] = ["- No major qualification gap identified.", ""]
     return "\n".join(lines)
 
 
