@@ -14,34 +14,37 @@ spec.loader.exec_module(indexnow)
 
 class IndexNowTests(unittest.TestCase):
     def setUp(self) -> None:
+        self.base_url = "https://jerechulze.github.io/radaria-licitaciones"
         self.site_manifest = {
             "record_count": 2,
             "pages": [
-                {"id": "ted-1", "url": "https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-1/"},
-                {"id": "ted-2", "url": "https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-2/"},
+                {"id": "ted-1", "url": f"{self.base_url}/opportunities/ted-1/"},
+                {"id": "ted-2", "url": f"{self.base_url}/opportunities/ted-2/"},
             ],
         }
-        self.brief_manifest = {
-            "brief_url": "https://syfaadelia67-bot.github.io/radaria-licitaciones/brief/"
-        }
+        self.brief_manifest = {"brief_url": f"{self.base_url}/brief/"}
 
     def test_collects_unique_canonical_urls(self) -> None:
-        urls = indexnow.collect_urls(self.site_manifest, self.brief_manifest)
+        urls = indexnow.collect_urls(self.site_manifest, self.brief_manifest, self.base_url)
         self.assertEqual(4, len(urls))
-        self.assertEqual("https://syfaadelia67-bot.github.io/radaria-licitaciones/", urls[0])
-        self.assertIn("https://syfaadelia67-bot.github.io/radaria-licitaciones/brief/", urls)
+        self.assertEqual(f"{self.base_url}/", urls[0])
+        self.assertIn(f"{self.base_url}/brief/", urls)
         self.assertEqual(len(urls), len(set(urls)))
 
     def test_rejects_external_or_tracking_urls(self) -> None:
         external = dict(self.site_manifest)
         external["pages"] = [{"url": "https://example.com/opportunity/"}]
         with self.assertRaisesRegex(ValueError, "outside the verified"):
-            indexnow.collect_urls(external, self.brief_manifest)
+            indexnow.collect_urls(external, self.brief_manifest, self.base_url)
 
         tracking = dict(self.site_manifest)
-        tracking["pages"] = [{"url": "https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-1/?source=test"}]
+        tracking["pages"] = [{"url": f"{self.base_url}/opportunities/ted-1/?source=test"}]
         with self.assertRaisesRegex(ValueError, "canonical"):
-            indexnow.collect_urls(tracking, self.brief_manifest)
+            indexnow.collect_urls(tracking, self.brief_manifest, self.base_url)
+
+    def test_rejects_invalid_base_url(self) -> None:
+        with self.assertRaisesRegex(ValueError, "Invalid HTTPS"):
+            indexnow.normalize_base_url("http://example.com/project")
 
     def test_key_file_name_must_match_content(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -55,12 +58,12 @@ class IndexNowTests(unittest.TestCase):
                 indexnow.load_key(invalid)
 
     def test_payload_uses_public_key_location(self) -> None:
-        urls = indexnow.collect_urls(self.site_manifest, self.brief_manifest)
-        payload = indexnow.build_payload(urls, "abcdef1234567890")
-        self.assertEqual("syfaadelia67-bot.github.io", payload["host"])
+        urls = indexnow.collect_urls(self.site_manifest, self.brief_manifest, self.base_url)
+        payload = indexnow.build_payload(urls, "abcdef1234567890", self.base_url)
+        self.assertEqual("jerechulze.github.io", payload["host"])
         self.assertEqual("abcdef1234567890", payload["key"])
         self.assertEqual(
-            "https://syfaadelia67-bot.github.io/radaria-licitaciones/abcdef1234567890.txt",
+            f"{self.base_url}/abcdef1234567890.txt",
             payload["keyLocation"],
         )
         self.assertEqual(urls, payload["urlList"])
