@@ -1,0 +1,69 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main, "agent/**"]
+    paths:
+      - "scripts/submit_indexnow.py"
+      - "tests/test_indexnow.py"
+      - "edf2dc33685f586f1cc9325bcd6cc23d.txt"
+      - ".github/workflows/indexnow.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/submit_indexnow.py"
+      - "tests/test_indexnow.py"
+      - "edf2dc33685f586f1cc9325bcd6cc23d.txt"
+      - ".github/workflows/indexnow.yml"
+  schedule:
+    - cron: "47 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-discovery
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test IndexNow integration
+        run: python -m unittest discover -s tests -p "test_indexnow.py" -v
+      - name: Compile submission script
+        run: python -m py_compile scripts/submit_indexnow.py
+      - name: Validate current canonical batch
+        run: |
+          python scripts/submit_indexnow.py \
+            --key-file edf2dc33685f586f1cc9325bcd6cc23d.txt \
+            --dry-run > /tmp/indexnow-payload.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          payload = json.loads(Path('/tmp/indexnow-payload.json').read_text(encoding='utf-8'))
+          assert payload['urlList']
+          assert len(payload['urlList']) == len(set(payload['urlList']))
+          print(f"Validated {len(payload['urlList'])} canonical URLs")
+          PY
+
+  submit:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Notify participating search engines
+        run: |
+          python scripts/submit_indexnow.py \
+            --key-file edf2dc33685f586f1cc9325bcd6cc23d.txt \
+            --attempts 6 \
+            --delay-seconds 60
