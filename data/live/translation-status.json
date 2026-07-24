@@ -1,0 +1,18 @@
+{
+  "generated_at": null,
+  "state": "awaiting_first_run",
+  "model": "openai/gpt-4.1-mini",
+  "record_count": 0,
+  "english_display_count": 0,
+  "cache_entries": 0,
+  "counts": {
+    "source_english": 0,
+    "cached": 0,
+    "translated": 0,
+    "original_only": 0,
+    "deferred": 0,
+    "request_failures": 0,
+    "rejected": 0
+  },
+  "errors": []
+}
