@@ -16,8 +16,15 @@ class InteractivityGuardTests(unittest.TestCase):
         loader = (ROOT / "data-loader.js").read_text(encoding="utf-8")
         self.assertIn("DATA_TIMEOUT_MS", loader)
         self.assertIn("AbortController", loader)
-        self.assertIn('if (badge.textContent !== label) badge.textContent = label;', loader)
+        self.assertIn(
+            "if (badge.textContent !== presentation.label) badge.textContent = presentation.label;",
+            loader,
+        )
+        self.assertIn('if (badge.textContent !== "DEMO") badge.textContent = "DEMO";', loader)
         self.assertNotIn('badge.textContent = state.mode === "live" ? "LIVE" : "DEMO";', loader)
+        self.assertNotIn("badge.textContent = presentation.label;\n", loader.replace(
+            "if (badge.textContent !== presentation.label) badge.textContent = presentation.label;\n", ""
+        ))
 
     def test_event_binding_is_idempotent(self) -> None:
         app = (ROOT / "app.js").read_text(encoding="utf-8")

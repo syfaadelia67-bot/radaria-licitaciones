@@ -6,11 +6,13 @@ on:
     paths:
       - "scripts/fetch_ted.py"
       - "scripts/normalize_country_names.py"
+      - "scripts/translate_to_english.py"
       - "scripts/validate_live_data.py"
       - "scripts/generate_site.py"
       - "scripts/generate_brief.py"
       - "scripts/score_founder_application.py"
       - "data-loader.js"
+      - "data/live/translation-cache.json"
       - "tests/**"
       - ".github/workflows/update_ted.yml"
   pull_request:
@@ -21,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: ted-live-data
@@ -37,7 +40,7 @@ jobs:
       - name: Run normalization and generation tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Compile Python scripts
-        run: python -m py_compile scripts/fetch_ted.py scripts/normalize_country_names.py scripts/validate_live_data.py scripts/generate_site.py scripts/generate_brief.py scripts/score_founder_application.py
+        run: python -m py_compile scripts/fetch_ted.py scripts/normalize_country_names.py scripts/translate_to_english.py scripts/validate_live_data.py scripts/generate_site.py scripts/generate_brief.py scripts/score_founder_application.py
       - name: Check JavaScript syntax
         run: node --check data-loader.js
 
@@ -62,6 +65,15 @@ jobs:
             --metadata /tmp/tendersignal-live/metadata.json
       - name: Normalize country names
         run: python scripts/normalize_country_names.py /tmp/tendersignal-live/opportunities.json
+      - name: Add cached English display layer
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/translate_to_english.py \
+            /tmp/tendersignal-live/opportunities.json \
+            --cache data/live/translation-cache.json \
+            --model openai/gpt-4.1-mini \
+            --batch-size 6
       - name: Validate before replacing last known good data
         run: python scripts/validate_live_data.py /tmp/tendersignal-live/opportunities.json
       - name: Publish validated data
@@ -88,6 +100,7 @@ jobs:
           test -s brief/latest.md
           test -s distribution/latest-posts.md
           test -s brief-sitemap.xml
+          test -s data/live/translation-cache.json
           python - <<'PY'
           import json
           from pathlib import Path
@@ -97,11 +110,15 @@ jobs:
           assert site['record_count'] > 0
           assert brief['record_count'] == site['record_count']
           assert all(not (len(item['country']) in (2, 3) and item['country'].isupper()) for item in records)
+          assert all(item.get('translation', {}).get('status') in {'source_english', 'machine_translated', 'original_only'} for item in records)
+          for item in records:
+              if item['translation']['status'] == 'machine_translated':
+                  assert item.get('original_title') and item.get('original_description')
           for page in site['pages']:
               assert Path(page['path']).is_file(), page['path']
           for generated in brief['files']:
               assert Path(generated).is_file(), generated
-          print(f"Verified {site['record_count']} pages plus market brief")
+          print(f"Verified {site['record_count']} pages plus English layer and market brief")
           PY
       - name: Commit changed data, pages and distribution assets
         run: |
@@ -112,5 +129,5 @@ jobs:
           git config user.name "tendersignal-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/live opportunities sitemap.xml feed.xml brief brief-sitemap.xml distribution
-          git commit -m "Update live TED opportunities, brief and distribution assets"
+          git commit -m "Update live TED opportunities, English layer and distribution assets"
           git push

@@ -67,6 +67,38 @@ def founder_application_url(record: dict, base_url: str) -> str:
     return f"../../founder.html?{params}"
 
 
+def language_context(record: dict) -> tuple[str, str, str]:
+    translation = record.get("translation") if isinstance(record.get("translation"), dict) else {}
+    status = translation.get("status", "original_only")
+    source_language = clean_text(translation.get("source_language"), "undetermined")
+    if status == "machine_translated":
+        model = clean_text(translation.get("model"), "GitHub Models")
+        return "en", "MACHINE-TRANSLATED ENGLISH", (
+            f"English translation generated through GitHub Models ({model}). "
+            f"Source language: {source_language}. The original text is preserved below."
+        )
+    if status == "source_english":
+        return "en", "ORIGINAL ENGLISH", "TED supplied this notice text in English; no machine translation was needed."
+    return "und", "ORIGINAL LANGUAGE", "An English translation is not available yet. The original TED text is shown without alteration."
+
+
+def original_text_section(record: dict) -> str:
+    translation = record.get("translation") if isinstance(record.get("translation"), dict) else {}
+    if translation.get("status") != "machine_translated":
+        return ""
+    original_title = clean_text(record.get("original_title"))
+    original_description = clean_text(record.get("original_description"))
+    source_language = clean_text(translation.get("source_language"), "Original language")
+    return f"""
+      <section class="detail-section original-text">
+        <details>
+          <summary>View authoritative original text ({html.escape(source_language)})</summary>
+          <h2>{html.escape(original_title)}</h2>
+          <p>{html.escape(original_description)}</p>
+        </details>
+      </section>"""
+
+
 def page_html(record: dict, metadata: dict, base_url: str) -> str:
     canonical = canonical_url(record, base_url)
     application_url = founder_application_url(record, base_url)
@@ -77,6 +109,7 @@ def page_html(record: dict, metadata: dict, base_url: str) -> str:
     keywords = [clean_text(item) for item in record.get("keywords", []) if clean_text(item)]
     generated_fields = set(record.get("provenance", {}).get("generated_fields", []))
     classification_note = "TenderSignal-generated classification" if generated_fields else "source classification"
+    page_language, language_badge, language_note = language_context(record)
     json_ld = {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -84,6 +117,7 @@ def page_html(record: dict, metadata: dict, base_url: str) -> str:
         "url": canonical,
         "name": title,
         "description": meta_description,
+        "inLanguage": page_language,
         "datePublished": record.get("published_at"),
         "dateModified": retrieved_at,
         "isBasedOn": record.get("source_url"),
@@ -92,7 +126,7 @@ def page_html(record: dict, metadata: dict, base_url: str) -> str:
     safe_json_ld = json.dumps(json_ld, ensure_ascii=False).replace("</", "<\\/")
     keyword_html = "".join(f"<li>{html.escape(item)}</li>" for item in keywords[:12]) or "<li>Not classified</li>"
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{html.escape(page_language)}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,8 +144,15 @@ def page_html(record: dict, metadata: dict, base_url: str) -> str:
   <main class="detail-main">
     <article class="detail-card">
       <p class="eyebrow">Verified public procurement notice</p>
+      <p class="translation-badge">{html.escape(language_badge)}</p>
       <h1 class="detail-title">{html.escape(title)}</h1>
       <p class="detail-lead">{html.escape(description)}</p>
+      <section class="detail-section translation-note">
+        <h2>Language and provenance</h2>
+        <p>{html.escape(language_note)}</p>
+        <p>The official TED notice remains authoritative for all legal, technical and eligibility decisions.</p>
+      </section>
+      {original_text_section(record)}
       <dl class="detail-facts">
         <div><dt>Country</dt><dd>{html.escape(clean_text(record.get('country'), 'Unknown'))}</dd></div>
         <div><dt>Category</dt><dd>{html.escape(clean_text(record.get('category'), 'Unclassified'))}</dd></div>
@@ -186,7 +227,7 @@ def rss_xml(records: list[dict], metadata: dict, base_url: str) -> str:
   <channel>
     <title>TenderSignal live opportunities</title>
     <link>{html.escape(base_url.rstrip('/') + '/')}</link>
-    <description>Verified public procurement notices normalized from TED. Last retrieval: {retrieved}</description>
+    <description>Verified public procurement notices with an English-first display layer. Last retrieval: {retrieved}</description>
     <language>en</language>
 {chr(10).join(items)}
   </channel>
