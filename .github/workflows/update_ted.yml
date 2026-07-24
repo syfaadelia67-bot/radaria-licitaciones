@@ -5,6 +5,7 @@ on:
     branches: [main, "agent/**"]
     paths:
       - "scripts/fetch_ted.py"
+      - "scripts/normalize_country_names.py"
       - "scripts/validate_live_data.py"
       - "scripts/generate_site.py"
       - "scripts/generate_brief.py"
@@ -35,7 +36,7 @@ jobs:
       - name: Run normalization and generation tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Compile Python scripts
-        run: python -m py_compile scripts/fetch_ted.py scripts/validate_live_data.py scripts/generate_site.py scripts/generate_brief.py
+        run: python -m py_compile scripts/fetch_ted.py scripts/normalize_country_names.py scripts/validate_live_data.py scripts/generate_site.py scripts/generate_brief.py
       - name: Check JavaScript syntax
         run: node --check data-loader.js
 
@@ -58,6 +59,8 @@ jobs:
             --limit 100 \
             --output /tmp/tendersignal-live/opportunities.json \
             --metadata /tmp/tendersignal-live/metadata.json
+      - name: Normalize country names
+        run: python scripts/normalize_country_names.py /tmp/tendersignal-live/opportunities.json
       - name: Validate before replacing last known good data
         run: python scripts/validate_live_data.py /tmp/tendersignal-live/opportunities.json
       - name: Publish validated data
@@ -89,8 +92,10 @@ jobs:
           from pathlib import Path
           site = json.loads(Path('data/live/generated-manifest.json').read_text(encoding='utf-8'))
           brief = json.loads(Path('data/live/brief-manifest.json').read_text(encoding='utf-8'))
+          records = json.loads(Path('data/live/opportunities.json').read_text(encoding='utf-8'))
           assert site['record_count'] > 0
           assert brief['record_count'] == site['record_count']
+          assert all(not (len(item['country']) in (2, 3) and item['country'].isupper()) for item in records)
           for page in site['pages']:
               assert Path(page['path']).is_file(), page['path']
           for generated in brief['files']:
