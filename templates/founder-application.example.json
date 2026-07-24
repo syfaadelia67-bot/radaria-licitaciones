@@ -1,0 +1,10 @@
+{
+  "company": "Example Cloud Studio",
+  "markets": ["Belgium", "France"],
+  "products_services": "Cloud migration, managed infrastructure, security monitoring and incident response for public-sector organizations.",
+  "contract_capacity": "USD 50k–250k",
+  "discovery_process": "We monitor public procurement portals and manually review tender documents before deciding whether to bid.",
+  "useful_features": ["Ranked alerts", "Bid-or-skip brief", "Deadline monitoring"],
+  "founder_interest": "Provisional USD 10 for 60 days",
+  "opportunity_id": "ted-123456-2026"
+}
