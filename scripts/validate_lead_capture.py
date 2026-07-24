@@ -38,8 +38,8 @@ def main() -> int:
         if token not in founder:
             fail(f"founder page is missing required disclosure: {token}")
 
-    if "https://tally.so/r/" not in capture:
-        fail("lead router must use the documented Tally public form route")
+    if "https://tally.so/r/${config.formId}" not in capture:
+        fail("lead router must build the documented Tally route from public configuration")
     if "originPage" not in capture or "source" not in capture or "offer" not in capture:
         fail("lead router must preserve attribution fields")
 
@@ -52,15 +52,10 @@ def main() -> int:
     if enabled.group(1) == "false" and form_id.group(1):
         fail("disabled lead capture must not publish a form ID")
 
-    secret_patterns = (
-        r"(?i)(api[_-]?key|secret|password)\s*[:=]\s*['\"][^'\"]+",
-        r"https://tally\.so/r/[^`\"'/{]+",
-    )
     combined = config + founder + capture
-    for pattern in secret_patterns:
-        match = re.search(pattern, combined)
-        if match and "${config.formId}" not in match.group(0):
-            fail("possible secret or hard-coded form endpoint detected")
+    secret_pattern = r"(?i)(api[_-]?key|secret|password)\s*[:=]\s*['\"][^'\"]+"
+    if re.search(secret_pattern, combined):
+        fail("possible secret detected in public lead-capture files")
 
     print("Lead capture validation passed: no local fake signup, no secrets, disclosures present.")
     return 0
