@@ -2,13 +2,14 @@
   const config = window.TenderSignalLeadConfig || {};
   const formIdPattern = /^[A-Za-z0-9_-]{4,32}$/;
   const configured = config.enabled === true && formIdPattern.test(String(config.formId || ""));
+  const incoming = new URLSearchParams(window.location.search);
 
   function buildLeadUrl(trigger) {
     const url = new URL(`https://tally.so/r/${config.formId}`);
-    url.searchParams.set("source", trigger.dataset.source || "website");
-    url.searchParams.set("originPage", window.location.pathname);
-    url.searchParams.set("offer", trigger.dataset.offer || "founder-validation");
-    const opportunityId = new URLSearchParams(window.location.search).get("opportunityId");
+    url.searchParams.set("source", incoming.get("source") || trigger.dataset.source || "website");
+    url.searchParams.set("originPage", incoming.get("originPage") || window.location.pathname);
+    url.searchParams.set("offer", incoming.get("offer") || trigger.dataset.offer || "founder-validation");
+    const opportunityId = incoming.get("opportunityId") || trigger.dataset.opportunityId;
     if (opportunityId) url.searchParams.set("opportunityId", opportunityId);
     return url.toString();
   }

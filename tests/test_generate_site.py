@@ -56,6 +56,13 @@ class GenerateSiteTests(unittest.TestCase):
             self.assertIn('rel="canonical" href="https://example.test/product/opportunities/ted-123456-2026/"', page_text)
             self.assertIn("TenderSignal-generated classification", page_text)
             self.assertIn(self.record["source_url"], page_text)
+            self.assertIn("Get a ranked fit report", page_text)
+            self.assertIn("source=opportunity-page", page_text)
+            self.assertIn("opportunityId=ted-123456-2026", page_text)
+            self.assertIn(
+                "originPage=https%3A%2F%2Fexample.test%2Fproduct%2Fopportunities%2Fted-123456-2026%2F",
+                page_text,
+            )
 
             sitemap = (root / "sitemap.xml").read_text(encoding="utf-8")
             self.assertIn("https://example.test/product/opportunities/ted-123456-2026/", sitemap)

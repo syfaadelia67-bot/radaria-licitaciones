@@ -12,7 +12,7 @@ import tempfile
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 
 BASE_URL = "https://syfaadelia67-bot.github.io/radaria-licitaciones"
 ID_PATTERN = re.compile(r"[^a-z0-9-]+")
@@ -54,8 +54,22 @@ def canonical_url(record: dict, base_url: str) -> str:
     return f"{base_url.rstrip('/')}/opportunities/{quote(slug_for(record['id']))}/"
 
 
+def founder_application_url(record: dict, base_url: str) -> str:
+    """Build a local founder-page route that preserves acquisition attribution."""
+    params = urlencode(
+        {
+            "source": "opportunity-page",
+            "originPage": canonical_url(record, base_url),
+            "offer": "founder-validation",
+            "opportunityId": clean_text(record["id"]),
+        }
+    )
+    return f"../../founder.html?{params}"
+
+
 def page_html(record: dict, metadata: dict, base_url: str) -> str:
     canonical = canonical_url(record, base_url)
+    application_url = founder_application_url(record, base_url)
     title = clean_text(record["title"])
     description = clean_text(record["description"])
     meta_description = short_description(description)
@@ -116,9 +130,14 @@ def page_html(record: dict, metadata: dict, base_url: str) -> str:
         <h2>Keywords</h2>
         <ul class="keyword-list">{keyword_html}</ul>
       </section>
+      <section class="detail-section">
+        <h2>Should your company pursue this opportunity?</h2>
+        <p>Apply for a founder validation report to compare this notice with your services, markets and contract capacity. Payment is not currently collected, and applying creates no purchase obligation.</p>
+      </section>
       <div class="detail-actions">
-        <a class="button primary" href="{html.escape(record['source_url'], quote=True)}" target="_blank" rel="noopener noreferrer">Open official TED notice</a>
-        <a class="button secondary" href="../../#profile">Rank against my supplier profile</a>
+        <a class="button primary" href="{html.escape(application_url, quote=True)}">Get a ranked fit report</a>
+        <a class="button secondary" href="{html.escape(record['source_url'], quote=True)}" target="_blank" rel="noopener noreferrer">Open official TED notice</a>
+        <a class="button secondary" href="../../#profile">Rank locally first</a>
       </div>
     </article>
   </main>
