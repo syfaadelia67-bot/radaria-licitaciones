@@ -16,6 +16,7 @@
     <nav aria-label="Primary navigation">
       <a href="#opportunities" data-i18n="nav_opportunities">Opportunities</a>
       <a href="#how-it-works" data-i18n="nav_how">How it works</a>
+      <a href="founder.html" data-i18n="founder_access">Founder access</a>
       <button id="languageButton" class="text-button" type="button" aria-label="Switch language">ES</button>
     </nav>
   </header>
@@ -28,9 +29,9 @@
         <p class="hero-subtitle" data-i18n="hero_subtitle">Describe what your company sells. TenderSignal scores public opportunities by fit, urgency and commercial value.</p>
         <div class="hero-actions">
           <a class="button primary" href="#profile" data-i18n="build_profile">Build my supplier profile</a>
-          <a class="button secondary" href="#opportunities" data-i18n="browse_demo">Browse demo opportunities</a>
+          <a class="button secondary" href="#opportunities" data-i18n="browse_demo">Browse opportunities</a>
         </div>
-        <p class="disclaimer" data-i18n="demo_disclaimer">Prototype: all opportunities shown are synthetic demonstration records, not active tenders.</p>
+        <p class="disclaimer" data-i18n="demo_disclaimer">Loading verified procurement data.</p>
       </div>
       <aside class="score-preview" aria-label="Example opportunity score">
         <div class="score-ring"><strong>89</strong><span>/100</span></div>
@@ -138,21 +139,19 @@
     <section class="alert-section">
       <div>
         <p class="eyebrow" data-i18n="founder_access">Founder access</p>
-        <h2 data-i18n="alert_title">Get the weekly ranked opportunity report</h2>
-        <p data-i18n="alert_body">Join the validation list. No payment is collected in this prototype.</p>
+        <h2 data-i18n="alert_title">Help shape ranked procurement alerts</h2>
+        <p data-i18n="alert_body">Apply for a validation report or the provisional founder plan. No payment is collected yet.</p>
       </div>
-      <form id="alertForm" class="alert-form">
-        <label class="sr-only" for="emailInput">Email</label>
-        <input id="emailInput" type="email" required placeholder="you@company.com">
-        <button class="button primary" type="submit" data-i18n="join_list">Join validation list</button>
-      </form>
-      <p id="alertMessage" class="form-message" role="status"></p>
+      <div>
+        <a class="button primary" href="founder.html" data-i18n="join_list">Apply for founder access</a>
+        <p class="form-message" data-i18n="founder_note">Applications are handled on a separate page with explicit consent and transparent data collection.</p>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>© 2026 TenderSignal. <span data-i18n="footer_note">Built as a zero-capital AI company experiment.</span></p>
-    <a href="https://github.com/syfaadelia67-bot/radaria-licitaciones" rel="noreferrer">GitHub</a>
+    <div><a href="feed.xml">RSS</a> · <a href="https://github.com/syfaadelia67-bot/radaria-licitaciones" rel="noreferrer">GitHub</a></div>
   </footer>
 
   <template id="opportunityTemplate">
