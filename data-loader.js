@@ -1,13 +1,33 @@
 (() => {
   const nativeFetch = window.fetch.bind(window);
   const state = { mode: "demo", metadata: null, data: null };
+  const DATA_TIMEOUT_MS = 6000;
   window.tenderSignalData = state;
+
+  async function fetchWithTimeout(url, init = {}, timeoutMs = DATA_TIMEOUT_MS) {
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => controller.abort(), timeoutMs);
+    const upstreamSignal = init.signal;
+    const abortFromUpstream = () => controller.abort();
+
+    if (upstreamSignal) {
+      if (upstreamSignal.aborted) controller.abort();
+      else upstreamSignal.addEventListener("abort", abortFromUpstream, { once: true });
+    }
+
+    try {
+      return await nativeFetch(url, { ...init, signal: controller.signal });
+    } finally {
+      window.clearTimeout(timer);
+      upstreamSignal?.removeEventListener("abort", abortFromUpstream);
+    }
+  }
 
   async function resolveDataMode() {
     try {
       const [metadataResponse, liveResponse] = await Promise.all([
-        nativeFetch("data/live/metadata.json", { cache: "no-store" }),
-        nativeFetch("data/live/opportunities.json", { cache: "no-store" }),
+        fetchWithTimeout("data/live/metadata.json", { cache: "no-store" }),
+        fetchWithTimeout("data/live/opportunities.json", { cache: "no-store" }),
       ]);
       if (!metadataResponse.ok || !liveResponse.ok) return;
       const metadata = await metadataResponse.json();
@@ -58,25 +78,31 @@
         const officialLink = card.querySelector(".source-link");
         card.insertBefore(detailLink, officialLink || null);
       }
-      detailLink.href = `opportunities/${encodeURIComponent(record.id)}/`;
+      const nextHref = `opportunities/${encodeURIComponent(record.id)}/`;
+      if (detailLink.getAttribute("href") !== nextHref) detailLink.href = nextHref;
     });
   }
 
   function updateLabels() {
     const disclaimer = document.querySelector(".disclaimer");
     if (disclaimer) {
+      let nextText;
       if (state.mode === "live") {
         const timestamp = state.metadata?.retrieved_at
           ? new Date(state.metadata.retrieved_at).toLocaleString()
           : "unknown";
-        disclaimer.textContent = `LIVE DATA · ${state.data.length} official TED notices · Last verified update: ${timestamp}`;
+        nextText = `LIVE DATA · ${state.data.length} official TED notices · Last verified update: ${timestamp}`;
       } else {
-        disclaimer.textContent = "DEMO DATA · Live TED data is not available yet. All records shown are synthetic demonstrations.";
+        nextText = "DEMO DATA · Live TED data is not available yet. All records shown are synthetic demonstrations.";
       }
+      if (disclaimer.textContent !== nextText) disclaimer.textContent = nextText;
     }
+
+    const label = state.mode === "live" ? "LIVE" : "DEMO";
     document.querySelectorAll(".demo-badge").forEach(badge => {
-      badge.textContent = state.mode === "live" ? "LIVE" : "DEMO";
-      badge.dataset.mode = state.mode;
+      // Avoid a self-triggering MutationObserver loop: text is changed only when needed.
+      if (badge.textContent !== label) badge.textContent = label;
+      if (badge.dataset.mode !== state.mode) badge.dataset.mode = state.mode;
     });
     linkLiveCards();
   }
@@ -85,6 +111,9 @@
     await ready;
     updateLabels();
     const grid = document.querySelector("#opportunityGrid");
-    if (grid) new MutationObserver(updateLabels).observe(grid, { childList: true, subtree: true });
+    if (grid) {
+      const observer = new MutationObserver(() => updateLabels());
+      observer.observe(grid, { childList: true, subtree: true });
+    }
   });
 })();
