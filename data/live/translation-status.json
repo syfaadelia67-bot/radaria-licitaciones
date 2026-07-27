@@ -1,18 +1,22 @@
 {
-  "generated_at": null,
-  "state": "awaiting_first_run",
+  "generated_at": "2026-07-27T10:12:00+00:00",
+  "state": "partial",
   "model": "openai/gpt-4.1-mini",
-  "record_count": 0,
-  "english_display_count": 0,
-  "cache_entries": 0,
+  "record_count": 46,
+  "english_display_count": 9,
+  "cache_entries": 5,
   "counts": {
-    "source_english": 0,
+    "source_english": 4,
     "cached": 0,
-    "translated": 0,
-    "original_only": 0,
-    "deferred": 0,
+    "translated": 5,
+    "original_only": 37,
+    "deferred": 34,
     "request_failures": 0,
-    "rejected": 0
+    "rejected": 3
   },
-  "errors": []
+  "errors": [
+    "translation for ted-516549-2026 lost numeric tokens: ['1/']",
+    "translation for ted-516681-2026 lost numeric tokens: ['1.']",
+    "translation for ted-516446-2026 lost numeric tokens: ['3,5']"
+  ]
 }

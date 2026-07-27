@@ -1,1457 +1,1957 @@
 [
   {
-    "id": "ted-513941-2026",
+    "id": "ted-516380-2026",
     "synthetic": false,
-    "title": "Výstavba FVE na budově čističky odpadních vod ve Špindlerově Mlýně",
-    "description": "Veřejné zakázka je rozdělena na dvě (2) části: Část 1 – Dodávka FVE Část 2 – Stavební úpravy Předmětem plnění veřejné zakázky je zejména pro Část 1: dodávka, instalace a zprovoznění fotovoltaického systému o výkonu 139,2 kW, tedy kompletace fotovoltaické elektrárny, na budovách v areálu ČOV ve městě Špindlerův Mlýn. pro Část 2: stavební úpravy mající za cíl zpevnění/vyztužení stávajících střešních konstrukcí budov na které budou umístěny fotovoltaické elektrárny.",
-    "country": "Czechia",
+    "title": "Carpentry work, interior construction",
+    "description": "Rupprecht-Gymnasium, Albrechtstraße, general renovation and expansion. Trade: Carpentry work, interior construction",
+    "country": "Germany",
     "region": "European Union",
-    "category": "General procurement",
+    "category": "Construction works",
     "keywords": [
-      "výstavba",
-      "budov",
-      "isti",
-      "odpadních",
-      "pindlerov",
-      "mlýn",
-      "ejné",
-      "zakázka",
-      "CPV 09331200",
-      "CPV 09332000"
+      "tischlerarbeiten",
+      "innenausbau",
+      "rupprecht-gymnasium",
+      "albrechtstraße",
+      "generalinstandsetzung",
+      "erweiterung",
+      "gewerk",
+      "CPV 45421000"
     ],
     "value": 0.0,
     "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-07-29",
+    "published_at": "2026-07-27",
+    "deadline": "2026-07-31",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513941-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516380-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513941-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516380-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "original_title": "Tischlerarbeiten, Innenausbau",
+    "original_description": "Rupprecht-Gymnasium, Albrechtstraße, Generalinstandsetzung und Erweiterung Gewerk: Tischlerarbeiten, Innenausbau",
+    "translation": {
+      "status": "machine_translated",
+      "display_language": "en",
+      "source_language": "German",
+      "provider": "GitHub Models",
+      "model": "openai/gpt-4.1-mini",
+      "source_hash": "2cc88cbf4ac206a6f3b06abf78354a986fd8b47b87acae16a1822f25f97740e3",
+      "translated_at": "2026-07-27T10:11:23+00:00"
     }
   },
   {
-    "id": "ted-513726-2026",
+    "id": "ted-516833-2026",
     "synthetic": false,
-    "title": "Fire de sutura neresorbabile",
-    "description": "Fire de sutura neresorbabile, conform caiet de sarcini. A. In temeiul prevederilor art. 160 din Legea 98 / 2016, modificata prin OUG 107 / 2017, operatorii economici interesati de procedura vor solicita clarificari sau informatii suplimentare in legatura cu documentatia de atribuire cu 20 zile inainte de termenul stabilit pentru depunerea ofertelor, iar in temeiul art. 161 din Legea 98 / 2016, modificata prin OUG 107 / 2017, raspunsul autoritatii contractante va fi transmis cu 10 zile (in a 11-a zi) inainte de termenul stabilit pentru depunerea ofertelor. B. Orice solicitare de clarificări trebuie semnata cu semnătură electronic extinsă, bazată pe un certificat calificat, eliberat de un furnizor de servicii de certificare acreditat în condiţiile legii şi încărcata în SEAP.",
-    "country": "Romania",
+    "title": "Professional supervision and occupational safety coordinator - Construction and reconstruction works of OŠ Vodice",
+    "description": "The subject of procurement is the services of professional supervision and occupational safety coordinator during the construction and reconstruction works of OŠ Vodice as part of the project \"Reconstruction and extension of OŠ Vodice, NPOO.C3.1.R1-I2.01-V1.0071,\" in accordance with the cost estimates which are an integral part of this Procurement Documentation. The supervision services under this contract include professional supervision services in accordance with the Construction Act (NN 155/25), the Act on Spatial Planning and Construction Activities (NN 78/15, 118/18, 110/19), and other applicable regulations. It will be considered that the economic operator has thoroughly studied this Procurement Documentation and its annexes before submitting the offer, has obtained all necessary data affecting the provision of the subject services at the specified locations, and has submitted their offer based on all of this.",
+    "country": "Croatia",
     "region": "European Union",
-    "category": "Medical equipment",
+    "category": "Architecture and engineering",
     "keywords": [
-      "fire",
-      "sutura",
-      "neresorbabile",
-      "conform",
-      "caiet",
-      "sarcini",
-      "temeiul",
-      "prevederilor",
-      "CPV 33140000"
+      "stru",
+      "nadzor",
+      "koordinator",
+      "tite",
+      "radu-",
+      "radovi",
+      "izgradnje",
+      "rekonstrukcije",
+      "CPV 71247000"
     ],
-    "value": 15274955.52,
-    "currency": "RON",
-    "published_at": "2026-07-24",
+    "value": 221760.0,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-04",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516833-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516833-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "original_title": "Stručni nadzor i koordinator zaštite na radu- Radovi izgradnje i rekonstrukcije OŠ Vodice",
+    "original_description": "Predmet nabave su usluge stručnog nadzora i koordinatora zaštite na radu tijekom radova izgradnje i rekonstrukcije OŠ Vodice u sklopu projekta \"Rekonstrukcija i dogradnja OŠ Vodice, NPOO.C3.1.R1-I2.01-V1.0071, sukladno troškovnicima koji čine sastavni dio ove Dokumentacije o nabavi. Usluge nadzora u okviru ovog ugovora obuhvaćaju usluge stručnog nadzora u smislu Zakona o gradnji (NN 155/25), Zakona o poslovima i djelatnostima prostornog uređenja i gradnje (NN 78/15, 118/18, 110/19) te drugih važećih propisa. Smatrat će se da je gospodarski subjekt prije podnošenja ponude u svemu proučio ovu Dokumentaciju o nabavi i njezine priloge, da je došao do svih potrebnih podataka koji utječu na pružanje predmetnih usluga na navedenim lokacijama, te da je na osnovu svega toga podnio svoju ponudu.",
+    "translation": {
+      "status": "machine_translated",
+      "display_language": "en",
+      "source_language": "Croatian",
+      "provider": "GitHub Models",
+      "model": "openai/gpt-4.1-mini",
+      "source_hash": "b2b949ceae2a058826c557466494a2500f7dd09f6b3f7c98fa19cd24b43480a2",
+      "translated_at": "2026-07-27T10:11:28+00:00"
+    }
+  },
+  {
+    "id": "ted-516289-2026",
+    "synthetic": false,
+    "title": "Expert assessment of the ongoing detailed contractor claim according to FIDIC Red Book according to SFDI methodologies for D3 constructions",
+    "description": "The subject of the public contract is the preparation of an independent expert opinion on the contractor's financial claims for the D3 constructions 0312/I Kaplice station – Nažidla, 0312/II Nažidla – Dolní Dvořiště, state border and D3 SSÚD Borek, which follow the already recognized time claim. The opinion will focus on verifying the legitimacy, adequacy, and demonstrability of the claims made in accordance with the contract for work and SFDI methodologies. The scope includes assessment of time and financial contexts, evaluation of documents, and preparation of an expert conclusion determining the justified amount of claims according to RED FIDIC.",
+    "country": "Czechia",
+    "region": "European Union",
+    "category": "Architecture and engineering",
+    "keywords": [
+      "expertní",
+      "posouzení",
+      "ného",
+      "detailního",
+      "claimu",
+      "zhotovitele",
+      "fidic",
+      "book",
+      "CPV 71300000"
+    ],
+    "value": 5460000.0,
+    "currency": "CZK",
+    "published_at": "2026-07-27",
     "deadline": "2026-08-05",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513726-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516289-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513726-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516289-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "original_title": "Expertní posouzení průběžného detailního claimu zhotovitele dle FIDIC Red Book dle metodik SFDI pro stavby D3",
+    "original_description": "Předmětem plnění veřejné zakázky je zpracování nezávislého expertního posudku k finančním claimům Zhotovitele na stavbách D3 0312/I Kaplice nádraží – Nažidla, D3 0312/II Nažidla – Dolní Dvořiště, st. hranice a D3 SSÚD Borek, které navazují na již uznaný časový nárok. Posudek se zaměří na ověření oprávněnosti, přiměřenosti a prokazatelnosti uplatněných nároků v souladu se smlouvou o dílo a metodikami SFDI. Součástí plnění je posouzení časových a finančních souvislostí, vyhodnocení podkladů a zpracování expertního závěru s určením oprávněné výše nároků dle RED FIDIC.",
+    "translation": {
+      "status": "machine_translated",
+      "display_language": "en",
+      "source_language": "Czech",
+      "provider": "GitHub Models",
+      "model": "openai/gpt-4.1-mini",
+      "source_hash": "4d935bbc7cf92a0c8329c5927306c369d11e94bff032e9d152dbbcb017296d11",
+      "translated_at": "2026-07-27T10:11:32+00:00"
     }
   },
   {
-    "id": "ted-513146-2026",
+    "id": "ted-516549-2026",
     "synthetic": false,
-    "title": "Świadczenie usług w zakresie transportu sanitarnego (POWTÓRZONY)",
-    "description": "1. Przedmiotem zamówienia jest świadczenie usług w zakresie transportu sanitarnego, zgodnie z wymogami określonymi w Załączniku nr 3 do SWZ – Projekt umowy. 2. Zamawiający nie dopuszcza składania ofert częściowych. Oferty nie zawierające pełnego zakresu przedmiotu zamówienia zostaną odrzucone. 3. Wspólny słownik zamówień (CPV): 60130000-8 Usługi w zakresie specjalistycznego transportu drogowego osób 60100000-9 Usługi w zakresie transportu drogowego Inne 1. W postępowaniu o udzielenie zamówienia o wartości równej lub przekraczającej progi unijne ofertę oraz oświadczenie, o którym mowa w art. 125 ust. 1, składa się, pod rygorem nieważności, w formie elektronicznej (art. 63 ust. 1 Pzp). 2. Sposób sporządzenia dokumentów elektronicznych, oświadczeń lub elektronicznych kopii dokumentów lub oświadczeń musi być zgodny z wymaganiami określonymi w rozporządzeniu Ministra Rozwoju, Pracy i Technologii z dnia 23 grudnia 2020 r. w sprawie podmiotowych środków dowodowych oraz innych dokumentów lub oświadczeń, jakich może żądać zamawiający od wykonawcy (Dz.U. poz. 2415 ze zm.) oraz rozporządzeniem Prezesa Rady Ministrów z dnia 30 grudnia 2020 r. w sprawie sposobu sporządzania i przekazywania info",
-    "country": "PO",
-    "region": "European Union",
-    "category": "Transport services",
-    "keywords": [
-      "wiadczenie",
-      "zakresie",
-      "transportu",
-      "sanitarnego",
-      "powtórzony",
-      "przedmiotem",
-      "zamówienia",
-      "jest",
-      "CPV 60130000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-10",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513146-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513146-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513303-2026",
-    "synthetic": false,
-    "title": "Messebau Grüne Woche 27",
-    "description": "Gegenstand dieses Verfahrens ist die Konzeption, Planung und Bauausführung des NRW-Länderbeitrags sowie die Gestaltung und Kreativleistung von Teilbereichen für das jeweilige Messejahr, die technische und organisatorische Begleitung vor, während und nach der Messelaufzeit inkl. des Abbaus und der Einlagerung für die GW 2027 in Berlin.",
-    "country": "Germany",
-    "region": "European Union",
-    "category": "Business services",
-    "keywords": [
-      "messebau",
-      "grüne",
-      "woche",
-      "gegenstand",
-      "dieses",
-      "verfahrens",
-      "konzeption",
-      "planung",
-      "CPV 79950000",
-      "CPV 79956000"
-    ],
-    "value": 260000.0,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-12",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513303-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513303-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513561-2026",
-    "synthetic": false,
-    "title": "Prijevoz učenika osnovnih škola Vukovarsko-srijemske županije",
-    "description": "Predmet nabave je usluga prijevoza učenika osnovnih škola kojima je osnivač Vukovarsko-srijemska županija. Ponuditelj je obvezan pružati uslugu prijevoza učenika putem posebnog linijskog prijevoza i to na linijama sukladno priloženom troškovniku. Odabrani ponuditelj obvezan je svakom učeniku koji ostvaruje uvjete za prijevoz izdati identifikacijsku kartu na njegovo ime, a koja vrijedi za vrijeme trajanja školske godine, odnosno za vrijeme važenja ugovora o prijevozu, temeljem koje će učenik imati osiguran prijevoz od mjesta stanovanja do mjesta škole. Prijevoz učenika osnovnih škola potrebno je obavljati visokokvalitetnim autobusima koji zadovoljavaju norme iz Pravilnika o uvjetima koje moraju ispunjavati autobusi kojima se organizirano prevoze djeca (NN 100/08 i 20/09), odnosno prijevoz će se obavljati i putem osobnog vozila kategorije M1 kapaciteta 7+1 ili 8+1 koja moraju zadovoljiti uvjete iz važećeg Pravilnika o posebnim uvjetima za vozila kojima se obavlja javni cestovni prijevoz i prijevoz za vlastite potrebe.",
-    "country": "Croatia",
-    "region": "European Union",
-    "category": "Transport services",
-    "keywords": [
-      "prijevoz",
-      "enika",
-      "osnovnih",
-      "kola",
-      "vukovarsko-srijemske",
-      "upanije",
-      "predmet",
-      "nabave",
-      "CPV 60130000"
-    ],
-    "value": 952734.24,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-13",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513561-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513561-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513156-2026",
-    "synthetic": false,
-    "title": "1. Budowa Muzeum Westerplatte i Wojny 1939 – Oddziału Muzeum II Wojny Światowej w Gdańsku – zakres 2",
-    "description": "1. Budowa Muzeum Westerplatte i Wojny 1939 – Oddziału Muzeum II Wojny Światowej w Gdańsku” – zakres 2. Zakres przedmiotu zamówienia obejmuje wykonanie robót budowlanych oraz przeprowadzenie procedury zakończenia budowy, o której mowa w Rozdziale 5c Ustawy Prawo budowlane (t.j. Dz. U. 2025 poz. 418 ze zm.) [dalej Prawo budowlane] dla zadania inwestycyjnego obejmującego realizację zakresu II inwestycji pod nazwą „Budowa Muzeum Westerplatte i Wojny 1939 – Oddziału Muzeum II Wojny Światowej w Gdańsku – zakres 2”. 1.1. Zakres rzeczowy zamówienia obejmuje wszystkie prace, czynności i roboty konieczne dla wykonania zadania inwestycyjnego, w tym następujące elementy: • Budowa dwukondygnacyjnego, podziemnego Budynku Głównego Muzeum o pow. użytkowej 7 051,54 m, • Budowa drogi pożarowej wraz z placem manewrowym dla wozu strażackiego, • Odtworzenie historycznych ciągów komunikacyjnych, • Odtworzenie historycznego stanowiska armaty, • Odbudowa reliktu Popielnika, • Remont konserwatorski obiektów: Pomnik Obrońców Wybrzeża, Wartownia nr 3, południowe skrzydło Nowych Koszar – trwała ruina, Pomnik 7 Zniczy, • Uczytelnienie obrysu obiektów: Mikołajewo, Willa podoficerska, północne skrzydło Nowych Ko",
-    "country": "PO",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "budowa",
-      "muzeum",
-      "westerplatte",
-      "wojny",
-      "oddzia",
-      "wiatowej",
-      "zakres",
-      "przedmiotu",
-      "CPV 45000000",
-      "CPV 45100000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-14",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513156-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513156-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513259-2026",
-    "synthetic": false,
-    "title": "Dogradnja proizvodno-skladišnog farmaceutskog objekta u Dugopolju",
-    "description": "Predmet nabave je dogradnja već postojećeg proizvodno-skladišnog farmaceutskog objekta na čest. zem. 5861/338 i čest.zem. 5861/459 K.O. Dugopolje sagrađenog sukladno, po sustavu „ključ u ruke“. Već postojeći farmaceutski objekt koji je izgrađen nalazi se na građevinskoj čestici 5861/459 K.O. Dugopolje, dok će se na čest.zem. 5861/338 K.O. Dugopolje izvoditi radovi izgradnje objekta koji su predmet nabave, a koji objekt će biti funkcionalno i tehnološki spojen sa već postojećim objektom te će činiti jednu funkiconalnu cjelinu. Detaljan opis predmeta nabave te vrsta i opseg radova kao i posebni zahtjevi vezani za izvođenje istih detaljno je utvrđeno projektnom dokumentacijom i troškovnikom koji su sastavni dio ove Dokumentacije o nabavi.",
-    "country": "Croatia",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "dogradnja",
-      "proizvodno-skladi",
-      "farmaceutskog",
-      "objekta",
-      "dugopolju",
-      "predmet",
-      "nabave",
-      "postoje",
-      "CPV 45253500"
-    ],
-    "value": 10000000.0,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-17",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513259-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513259-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513980-2026",
-    "synthetic": false,
-    "title": "Eesti.ai koolitajate tellimine (Riigikantselei)",
-    "description": "Hange viiakse läbi Eesti.ai programmi “Kõige AI targem rahvas” seatud eesmärkide saavutamiseks. Tegu on suuremahulise tehisaru alase teadlikkuse ja oskuste arendamise programmiga, mis on suunatud tööealistele elanikele erinevates ametirollides. Perioodil 2026-2027 on eesmärgiks, et vähemalt ühe Eesti.ai töötoa või muus formaadis õpiampsu läbiks 100000 tööealist elanikku. Riigihanke tulemusel sõlmitakse raamlepingud mitme pakkujaga kehtivusega kuni 31.12.2027. Hanketeates esitatud raamlepingu aluskuupäev on eeldatav st raamlepingu täitmine algab alates lepingu sõlmimisest arvestusega, et lepingu täitmise tähtaeg on alusdokumentides sätestatud lõpptähtaeg (31.12.2027). Hankija viib läbi infotunni. Infotund toimub 05.08.2026 kell 11.00 -12.00. Infopäeval toimub Teamsi koosolekuna ja kõik osalejad saavad koosolekuga liituda alloleva lingi kaudu: https://teams.microsoft.com/meet/373318743101611?p=IfrCQISt1WDp9bkMjh Koosoleku ID: 373 318 743 101 611 Pääsukood: Vd9Pz2wg / Kõrvaldamise alused ja kvalifitseerimistingimused: Vaata hanke alusdokumentidest",
-    "country": "Spain",
-    "region": "European Union",
-    "category": "Education and training",
-    "keywords": [
-      "eesti",
-      "koolitajate",
-      "tellimine",
-      "riigikantselei",
-      "hange",
-      "viiakse",
-      "läbi",
-      "programmi",
-      "CPV 80400000",
-      "CPV 80420000"
-    ],
-    "value": 5000000.0,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-17",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513980-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513980-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513567-2026",
-    "synthetic": false,
-    "title": "Servicii de supervizare \"Proiectare și execuție Autostrada Târgu Mureș-Târgu Neamț Secțiunea II: Miercurea Nirajului-Leghin, Lot 2C: Pipirig-Vânători Neamț (Leghin)\"",
-    "description": "Obiectul contractului Servicii de supervizare \"Proiectare și execuție Autostrada Târgu Mureș-Târgu Neamț Secțiunea II: Miercurea Nirajului-Leghin, Lot 2C: Pipirig-Vânători Neamț (Leghin)\" va consta în furnizarea de servicii de supervizare de înaltă calitate, atât în timpul perioadei de proiectare și execuție a lucrărilor, cât și pe parcursul perioadei de garanție a lucrărilor, în vederea urmăririi corectei utilizări a fondurilor disponibile și pentru a se asigura că Antreprenorul proiectează și execută lucrările în conformitate cu obligațiile contractuale, în special în ceea ce privește durata, cantitatea, calitatea și costul proiectarii și al lucrărilor. În conformitate cu prevederile art. 160 alin. (1) din Legea nr. 98/2016 cu modificările şi completările ulterioare, termenul limită până la care orice operator economic interesat de participarea la procedura de achiziţie publică are dreptul de a solicita clarificări sau informaţii suplimentare în legătură cu documentaţia de atribuire este cu 18 zile înainte de termenul limită de depunere a ofertelor. În conformitate cu prevederile art. 160 alin. (2) din Legea 98/2016 cu modificările şi completările ulterioare, Autoritatea Contract",
-    "country": "Romania",
-    "region": "European Union",
-    "category": "Architecture and engineering",
-    "keywords": [
-      "servicii",
-      "supervizare",
-      "proiectare",
-      "execu",
-      "autostrada",
-      "târgu",
-      "mure",
-      "neam",
-      "CPV 71520000",
-      "CPV 71356100"
-    ],
-    "value": 70913357.34,
-    "currency": "RON",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-20",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513567-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513567-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513353-2026",
-    "synthetic": false,
-    "title": "Zakup, dostawa i montaż agregatów prądotwórczych",
-    "description": "1. Przedmiotem zam. jest dostawa wraz z montażem 9 agregatów prądotwórczych o mocy od 40 kVA do 50 kVA do obiektów podmiotów i organu ochrony ludności i obrony cywilnej w celu zapewnienia ciągłości zasilania w sytuacjach kryzysowych, awaryjnych lub zagrożeń naturalnych. Zamówienie obejmuje również wykonanie prac zw. z montażem i instalacją, w tym rob. przygotowawcze, posadowienie płyty pod agregat, posadowienie agregatu prąd., ułożenie wew. linii zasilających i sterowniczych, montaż Systemu Załączenia Rezerwy (SZR), rob. porządkowe oraz wyk. pomiarów kontrolnych. Szcz. zakres robót został określony w Zał. nr 1 do SWZ – Opis przedmiotu zamówienia (z podziałem na poszcz. lokalizacje przedmiary, projekty techniczne, STWiOR). 2. Dostawa i montaż, o których mowa w pkt 1 obejmuje następujące lokalizacje: - Zespół Szkół Ponadpodstawowych nr 2 w Jarocinie ul. Franciszkańska 2 i ZSP nr 1 w Jarocinie - ul. Franciszkańska 1 (3 szt.), - Liceum Ogólnokształcące im. T. Kościuszki nr 1 w Jarocinie ul. Kościuszki 31 (1 szt.), - Zespół Szkół Przyrodniczo - Biznesowych im. Jadwigi Dziubińskiej w Tarcach – Tarce 19 (1 szt.), - Zespół Szkół Specjalnych w Jarocinie – ul. Szubianki 21 (1 szt.), - Powiat",
-    "country": "PO",
-    "region": "European Union",
-    "category": "Electrical equipment",
-    "keywords": [
-      "zakup",
-      "dostawa",
-      "monta",
-      "agregatów",
-      "dotwórczych",
-      "przedmiotem",
-      "jest",
-      "wraz",
-      "CPV 31122000",
-      "CPV 32421000"
-    ],
-    "value": 1341403.51,
-    "currency": "PLN",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-21",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513353-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513353-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513361-2026",
-    "synthetic": false,
-    "title": "2026_049CP Aquisição de Serviços de Recolha de Areias e Gradados a partir de Instalações de Saneamento do Grupo Águas de Portugal",
-    "description": "2026_049CP Aquisição de Serviços de Recolha de Areias e Gradados a partir de Instalações de Saneamento do Grupo Águas de Portugal",
-    "country": "PR",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "aquisição",
-      "serviços",
-      "recolha",
-      "areias",
-      "gradados",
-      "partir",
-      "instalações",
-      "saneamento",
-      "CPV 90512000"
-    ],
-    "value": 789495.0,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-21",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513361-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513361-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513313-2026",
-    "synthetic": false,
-    "title": "Prestação de Serviços de Limpeza para os 04 (quatro) Complexos de Piscinas da GesLoures, EM",
-    "description": "Prestação de Serviços de Limpeza para os 04 (quatro) Complexos de Piscinas da GesLoures, EM",
-    "country": "PR",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "prestação",
-      "serviços",
-      "limpeza",
-      "para",
-      "quatro",
-      "complexos",
-      "piscinas",
-      "gesloures",
-      "CPV 90910000"
-    ],
-    "value": 270000.0,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-21",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513313-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513313-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513041-2026",
-    "synthetic": false,
-    "title": "„Изготвяне на технически проекти за основен ремонт на улици на територията на община Омуртаг по осем обособени позиции“",
-    "description": "„Изготвяне на технически проекти за основен ремонт на улици на територията на община Омуртаг по осем обособени позиции“ Настоящата обществена поръчка е разделена на 8 (осем) обособени позиции, както следва: Обособена позиция № 1: „Изготвяне на технически проект за строеж \"Основен ремонт на ул.\"Шипка\" , с.Илийно от о.т. 15 до о.т.38 с дължина 250 м, от о.т.38 до о.т.60 с дължина 230 м, от о.т.60 до о.т.55 с дължина 100 м, от о.т. 60 до о.т. 76 с дължина 84 м“; Обособена позиция № 2: „Изготвяне на технически проект за строеж \"Основен ремонт на ул.\"Партизанска\" , с.Камбурово от о.т. 146 до о.т.59 с дължина 140 м, от о.т.59 до о.т.60 с дължина 125 м“; Обособена позиция № 3: Обособена позиция № 3: „Изготвяне на технически проект за строеж \"Основен ремонт на ул.\"Иван Вазов\",с.Камбурово от о.т. 60 до о.т.70 с дължина 300 м “; Обособена позиция № 4: „Изготвяне на технически проект за строеж \"Основен ремонт на ул.\"Георги Паров\", с.Беломорци от о.т. 32 до о.т. 39 с дължина 650 м\" Обособена позиция № 5: „Изготвяне на технически проект за строеж \"Основен ремонт на ул.\"Оборище\" , с.Козма Презвитер от о.т. 92 до о.т.68 с дължина 260 м“ Обособена позиция № 6: „Изготвяне на технически проект за ст",
-    "country": "Bulgaria",
-    "region": "European Union",
-    "category": "Architecture and engineering",
-    "keywords": [
-      "CPV 71320000"
-    ],
-    "value": 16847.49,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-24",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513041-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513041-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513327-2026",
-    "synthetic": false,
-    "title": "Suministro sistemas de monitorización para la Unidad de Cuidados Intermedios Polivalentes del H.U. Donostia",
-    "description": "Suministro sistemas de monitorización para la Unidad de Cuidados Intermedios Polivalentes del H.U. Donostia",
-    "country": "Spain",
-    "region": "European Union",
-    "category": "Medical equipment",
-    "keywords": [
-      "suministro",
-      "sistemas",
-      "monitorización",
-      "para",
-      "unidad",
-      "cuidados",
-      "intermedios",
-      "polivalentes",
-      "CPV 33195000"
-    ],
-    "value": 882000.0,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-24",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513327-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513327-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513978-2026",
-    "synthetic": false,
-    "title": "Ausbau der Geschäfststelle im städtischen Stadion an der Hammer Str. in Münster - Planungsleistungen",
-    "description": "Gegenstand des Verfahrens ist die Vergabe von Planungsleistungen Objektplanung LP 1-3 sowie 5-7 und Technische Gebäudeausrüstung LP 1-3 sowie 5-7, ALG 1-5 sowie die Leistungen der technischen und künstlerischen Bauoberleitung für den Ausbau der Geschäftsstelle im städtischen Stadion an der Hammer Straße in Münster.",
-    "country": "Germany",
-    "region": "European Union",
-    "category": "Architecture and engineering",
-    "keywords": [
-      "ausbau",
-      "geschäfststelle",
-      "städtischen",
-      "stadion",
-      "hammer",
-      "münster",
-      "planungsleistungen",
-      "gegenstand",
-      "CPV 71240000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-24",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513978-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513978-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513168-2026",
-    "synthetic": false,
-    "title": "Umbau und Erweiterung der Grundschule Fleestedt - Elektroinstallation",
-    "description": "Elektroinstallation",
-    "country": "Germany",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "umbau",
-      "erweiterung",
-      "grundschule",
-      "fleestedt",
-      "elektroinstallation",
-      "CPV 45311200"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513168-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513168-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513357-2026",
-    "synthetic": false,
-    "title": "Umbau Alte Weberei zum KreativCampus - Los 20 Aufzug",
-    "description": "LOS 20 Auzug: - Personenaufzug, 1600 kg, 1,0 m/s, 1 St - Automatische Notevakuierung, Psch - Brandfallsteuerung, statisch, Psch - Automatische Schachtentrauchung ,Psch - jährliche Voll-Wartung, Psch",
-    "country": "Germany",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "umbau",
-      "alte",
-      "weberei",
-      "kreativcampus",
-      "aufzug",
-      "auzug",
-      "personenaufzug",
-      "automatische",
-      "CPV 45000000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513357-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513357-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513312-2026",
-    "synthetic": false,
-    "title": "Asysta techniczna i wsparcie serwisowe systemu RayStation",
-    "description": "Przedmiotem zamówienia jest usługa asysty technicznej i wsparcia serwisowego systemu RayStation posiadanego przez Szpital Uniwersytecki w Krakowie. Szczegółowy opis przedmiotu zamówienia zawiera SWZ wraz z załącznikami. Opis ten należy odczytywać wraz z ewentualnymi zmianami treści SWZ, będącymi np. wynikiem udzielonych odpowiedzi na zapytania wykonawców.",
-    "country": "PO",
-    "region": "European Union",
-    "category": "IT services",
-    "keywords": [
-      "asysta",
-      "techniczna",
-      "wsparcie",
-      "serwisowe",
-      "systemu",
-      "raystation",
-      "przedmiotem",
-      "zamówienia",
-      "CPV 72611000"
-    ],
-    "value": 1668000.0,
-    "currency": "PLN",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513312-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513312-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513571-2026",
-    "synthetic": false,
-    "title": "GROUPEMENT DE COMMANDE : MARCHE DE TRANSPORTS SANITAIRES TERRESTRES EN CONTINUITE DES SECOURS SUR PISTES SUR LES DOMAINES SKIABLES D'AUSSOIS-SARDIERES, LA NORMA ET VALFREJUS",
-    "description": "TRANSPORTS SANITAIRES TERRESTRES EN AMBULANCE",
-    "country": "France",
-    "region": "European Union",
-    "category": "Health and social work",
-    "keywords": [
-      "groupement",
-      "commande",
-      "marche",
-      "transports",
-      "sanitaires",
-      "terrestres",
-      "continuite",
-      "secours",
-      "CPV 85143000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513571-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513571-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513737-2026",
-    "synthetic": false,
-    "title": "Wykonywanie usługi sprzątania internatów i kwater internatowych w obszarze działania Oddziału Terenowego Mazowieckiego",
-    "description": "1. Przedmiotem zamówienia jest wykonywanie usługi sprzątania internatów i kwater internatowych w obszarze działania Oddziału Terenowego Mazowieckiego. 2. Szczegółowy opis przedmiotu zamówienia zawiera załącznik nr 2 do SWZ. 3. Informacje dodatkowe do oszacowania ceny oferty określa załącznik nr 2A do SWZ. 4. Zamawiający przewiduje możliwość udzielenia zamówień w trybie zamówienia z wolnej ręki, na zasadach określonych w art. 214 ust. 1 pkt 7 Ustawy. Szczegółowe informacje w zakresie powtórzenia podobnych usług zostały opisane w opisie przedmiotu zamówienia stanowiącym załącznik nr 2 do SWZ.",
-    "country": "PO",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "wykonywanie",
-      "sprz",
-      "tania",
-      "internatów",
-      "kwater",
-      "internatowych",
-      "obszarze",
-      "dzia",
-      "CPV 90910000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513737-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513737-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513873-2026",
-    "synthetic": false,
-    "title": "Informationszentrum Mathildenhöhe Darmstadt - Aufzugsanlage",
-    "description": "Das neue Informationszentrum auf der Mathildenhöhe wird zum Markstein der international bedeutenden Geschichte der Darmstädter Künstlerkolonie. Wie selbstverständlich positioniert sich der formal reduzierte Neubau, in Form von drei übereinander gestapelten gläsernen Pavillons, in der wunderschönen Parkanlage des Osthanges. In seiner Ausrichtung nimmt das Informationszentrum die Flucht des historischen Ausstellungsgebäudes auf und sucht eine neutrale Mitte im Stadtgefüge zwischen Olbrichweg und Ateliergebäude. Die Eingangsebene des viergeschossigen Informationszentrum ist offen und einladend gestaltet, ein Ort zum Ankommen, um sich zu informieren, aber auch ein idealer Ort zum Verweilen. Über den Windfang betritt man das Foyer, vorbei an Kasse und Shop gelangt man in das einladende und helle Café des Informationszentrums. Den Ankommenden bieten sich hier beeindruckende Blicke vom dicht begrünten Park des Osthanges bis hin zum Ateliergebäude und dessen Garten. Über eine großzügige, zentrale Wendeltreppe und einen Personenaufzug gelangen die Besucher in die direkt darüber liegende Ausstellungsebene. Über zwei exzentrisch versetzte Treppenhauskerne wird man in die oberste Ebene mit dem",
-    "country": "Germany",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "informationszentrum",
-      "mathildenhöhe",
-      "darmstadt",
-      "aufzugsanlage",
-      "neue",
-      "wird",
-      "markstein",
-      "international",
-      "CPV 45313100",
-      "CPV 42416100"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513873-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513873-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513841-2026",
-    "synthetic": false,
-    "title": "Ersatzneubau Kombibad Rastatt - Metalltüren und Zargen",
-    "description": "Ersatzneubau Kombibad Rastatt - Metalltüren und Zargen",
-    "country": "Germany",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "ersatzneubau",
-      "kombibad",
-      "rastatt",
-      "metalltüren",
-      "zargen",
-      "CPV 45000000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513841-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513841-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513837-2026",
-    "synthetic": false,
-    "title": "Umbau Alte Weberei zum KreativCampus - Los 03 Gerüst",
-    "description": "LOS 3 Gerüstbauarbeiten: - Metallgerüst als Fassadengerüst Breite 90 cm GKL 4, 1761 m2 - Dachdecker-Fanggerüst, 138 m - wandseitige Konsolen Belagsverbreiterung 0,30 m, 216 m - Verstärkung Gitterträger ,12 m - Stützgerüst / Lehrgerüst mit Ballastierung (Stirnseiten), 340 m3 - Rollrüstung Arbeitshöhe 2,0 m , 2 Stück - Fanggerüst, 67 m",
-    "country": "Germany",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "umbau",
-      "alte",
-      "weberei",
-      "kreativcampus",
-      "gerüst",
-      "gerüstbauarbeiten",
-      "metallgerüst",
-      "fassadengerüst",
-      "CPV 45000000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-25",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513837-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513837-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513059-2026",
-    "synthetic": false,
-    "title": "UPOL/PřF/KEF - Systém FIB-SEM včetně analytických technik a nanoindentace",
-    "description": "Předmětem Veřejné zakázky je dodávka mikroskopického systému FIB-SEM (skenovací elektronový mikroskop s iontovým svazkem) s možností depozice nejméně tří materiálů (platina, uhlík, wolfram) a s navazujícími analytickými technikami pro detailní analýzu studovaných materiálů (4DSTEM, EBSD, EDS, Nanoindentace, TOF-SIMS). Minimální požadavky na předmět Veřejné zakázky jsou vymezeny technickými, obchodními nebo jinými smluvními podmínkami, které jsou přílohou Zadávací dokumentace. A to zejména Technickou specifikací a závazným Zněním smlouvy.",
-    "country": "Czechia",
-    "region": "European Union",
-    "category": "Laboratory equipment",
-    "keywords": [
-      "upol",
-      "systém",
-      "fib-sem",
-      "analytických",
-      "technik",
-      "nanoindentace",
-      "ejné",
-      "zakázky",
-      "CPV 38511100",
-      "CPV 38512100"
-    ],
-    "value": 31452000.0,
-    "currency": "CZK",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-26",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513059-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513059-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513738-2026",
-    "synthetic": false,
-    "title": "„Извършване на лабораторни изследвания за нуждите на Медицински университет – Варна“",
-    "description": "Предметът на обществената поръчка е избор на изпълнител за извършването на 425 вида лабораторни изследвания в обхвата на медицински стандарти „Клинична лаборатория“, „Микробиология“, „Вирусология“, „Клинична имунология“ и \"Клинична патология\". Видовете изследвания са подробно описани в Приложение №1 - Техническа спецификация (ТС) и се определят от Възложителя в зависимост от конкретните му потребности.",
-    "country": "Bulgaria",
-    "region": "European Union",
-    "category": "Health and social work",
-    "keywords": [
-      "CPV 85111810"
-    ],
-    "value": 81882.05,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-27",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513738-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513738-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513855-2026",
-    "synthetic": false,
-    "title": "Contratación del servicio de recogida, gestión y eliminación de los residuos generados en Hospitales de Día y Centros Asistenciales de FREMAP, Mutua Colaboradora con la Seguridad Social nº61, sitos en varias Comunidades Autónomas de España",
-    "description": "Las necesidades que deben satisfacerse mediante este procedimiento se especifican, describen en detalle y justifican en la Memoria de Necesidades que se publica con el mismo.",
-    "country": "Spain",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "contratación",
-      "servicio",
-      "recogida",
-      "gestión",
-      "eliminación",
-      "residuos",
-      "generados",
-      "hospitales",
-      "CPV 90511000"
-    ],
-    "value": 288442.66,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-27",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513855-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513855-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513664-2026",
-    "synthetic": false,
-    "title": "Dostawa płynów, detergentów do mycia i płukania oraz odkamieniania i nabłyszczania myjek, środków do czyszczenia i pielęgnacji stali szlachetnej oraz preparatów czyszczących dla Jednostek USK Nr 1 w Lublinie",
-    "description": "Przedmiot zamówienia stanowi dostawa płynów, detergentów do mycia i płukania oraz odkamieniania i nabłyszczania myjek, środków do czyszczenia i pielęgnacji stali szlachetnej oraz preparatów czyszczących dla Jednostek USK Nr 1 w Lublinie. 2. Przedmiot zamówienia został podzielony na części. Zamawiający dopuszcza składania ofert częściowych. 3. Szczegółowy opis oraz sposób realizacji zamówienia zawiera OPZ, stanowiący Załącznik nr 1-7 do SWZ. 4. Zamawiający dopuszcza rozwiązań równoważnych. 5. W przypadku gdy w dokumentacji zostały wskazane, znaki towarowe, patenty lub pochodzenia, źródła lub szczególny proces, który charakteryzuje produkty - Zamawiający dopuszcza oferowanie rozwiązań równoważnych. Zamawiający wskaże w opisie przedmiotu zamówienia kryteria stosowane w celu oceny równoważności. 6. Szczegółowe dane bezwzględnie wymagane do właściwej identyfikacji wyrobu winny być umieszczone na każdym opakowaniu oraz na opakowaniu zewnętrznym i muszą zawierać co najmniej: a. nazwę handlową; b. nr katalogowy c. producenta d. datę / termin ważności",
-    "country": "PO",
+    "title": "Dostawa mebli na potrzeby RZGW w Warszawie i jednostek podległych",
+    "description": "Przedmiotem zamówienia jest dostawa mebli biurowych, foteli obrotowych i krzeseł na potrzeby jednostek organizacyjnych Państwowego Gospodarstwa Wodnego Wody Polskie. Szczegółowy opis przedmiotu zamówienia określa Załącznik Nr 1 do SWZ ( Zał. nr 1 do SWZ- OPZ po zmianach nr 2) zawierający opisy zamawianych asortymentów oraz formularze wyceny asortymentowo-cenowej zawarte w załącznikach nr 2.1 – 2.7 do SWZ, oddzielnie dla każdej części zamówienia. 4.2 Zamawiający informuje, że: 4.2.1 Dopuszcza składanie ofert częściowych 4.2.2 Dokonał podziału zamówienia na 7 części: 1/Dostawa mebli na potrzeby RZGW w Warszawie i jednostek podległych, Część 1 – Zarząd Zlewni w Ciechanowie 2/ Dostawa mebli na potrzeby RZGW w Warszawie i jednostek podległych, Część 2 – Zarząd Zlewni w Dębem 3/ Dostawa mebli na potrzeby RZGW w Warszawie i jednostek podległych, Część 3 – Zarząd Zlewni w Łowiczu 4/ Dostawa mebli na potrzeby RZGW w Warszawie i jednostek podległych, Część 4 – Zarząd Zlewni w Piotrkowie Trybunalskim 5/ Dostawa mebli na potrzeby RZGW w Warszawie i jednostek podległych, Część 5 – Zarząd Zlewni w Warszawie 6/ Dostawa mebli na potrzeby RZGW w Warszawie i jednostek podległych, Część 6 – Zarząd Zl",
+    "country": "Poland",
     "region": "European Union",
     "category": "Furniture",
     "keywords": [
       "dostawa",
-      "ynów",
-      "detergentów",
-      "mycia",
-      "ukania",
+      "mebli",
+      "potrzeby",
+      "rzgw",
+      "warszawie",
+      "jednostek",
+      "podleg",
+      "przedmiotem",
+      "CPV 39130000",
+      "CPV 39131000"
+    ],
+    "value": 425955.13,
+    "currency": "PLN",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-05",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516549-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516549-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "437754bd993fe606d86e36fe640eca3c91a2e4ee40b93fb42c1550f9f9ef5906",
+      "reason": "validation_rejected"
+    }
+  },
+  {
+    "id": "ted-516473-2026",
+    "synthetic": false,
+    "title": "Emergency Medical Vehicles",
+    "description": "The subject of procurement is: EMERGENCY MEDICAL VEHICLES according to the standard HRN EN 1789:2024 or equivalent (Medical vehicles and their equipment) in accordance with the requirements in the technical specification",
+    "country": "Croatia",
+    "region": "European Union",
+    "category": "Transport equipment",
+    "keywords": [
+      "vozila",
+      "hitnu",
+      "medicinu",
+      "predmet",
+      "nabave",
+      "prema",
+      "normi",
+      "jednakovrijednoj",
+      "CPV 34114122"
+    ],
+    "value": 384000.0,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-06",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516473-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516473-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "original_title": "Vozila za hitnu medicinu",
+    "original_description": "Predmet nabave su: VOZILA ZA HITNU MEDICINU prema normi HRN EN 1789:2024 ili jednakovrijednoj (Medicinska vozila i njihova oprema) sukladno zahtjevanom u tehničkoj specifikaciji",
+    "translation": {
+      "status": "machine_translated",
+      "display_language": "en",
+      "source_language": "Croatian",
+      "provider": "GitHub Models",
+      "model": "openai/gpt-4.1-mini",
+      "source_hash": "c365e1a5ffb663b9a889f9d89a7932594ccf334bc46a7e41c1d0630a1e40adcd",
+      "translated_at": "2026-07-27T10:11:43+00:00"
+    }
+  },
+  {
+    "id": "ted-516681-2026",
+    "synthetic": false,
+    "title": "Dostawa sprzętu komputerowego",
+    "description": "1.Przedmiotem zamówienia jest dostawa sprzętu komputerowego, zgodnie z zasadami określonymi w SWZ, w tym w formularzu opis przedmiotu zamówienia na daną Część oraz w projektowanych postanowieniach umowy w odniesieniu do danej Części. Przedmiot zamówienia został podzielony na trzy (3) części: a) Część I – dostawa komputerów przenośnych standardowych wraz z monitorami; b) Część II – dostawa komputerów przenośnych wydajnych wraz z monitorami, c) Część III – dostawa komputerów stacjonarnych wydajnych wraz z monitorami, z dopuszczeniem składania ofert częściowych. Uwaga! Zamawiający przewiduje w każdej Części zamówienia prawo opcji. 1) Część I Obok zamówienia gwarantowanego w Części I obejmującego dostawę 73 szt. komputerów przenośnych standardowych oraz 73 szt. monitorów, Zamawiający zastrzega sobie prawo zrealizowania zamówienia objętego prawem opcji. Realizacja prawa opcji będzie polegała na dostarczeniu sprzętu we wskazanej przez Zamawiającego liczbie, tj. maksymalnie 17 szt. komputerów przenośnych standardowych oraz maksymalnie 17 szt. monitorów. Opis sprzętu objętego prawem opcji jest tożsamy (identyczny) z opisem sprzętu objętego zamówieniem gwarantowanym. 2) Część II Obok zamówi",
+    "country": "Poland",
+    "region": "European Union",
+    "category": "Office and computing equipment",
+    "keywords": [
+      "dostawa",
+      "sprz",
+      "komputerowego",
+      "przedmiotem",
+      "zamówienia",
+      "jest",
+      "zgodnie",
+      "zasadami",
+      "CPV 30213100",
+      "CPV 30213000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-10",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516681-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516681-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "88b8c64cb5c7070a00b5c53522d6e8720b3d41da5f4a87938ec30c3a2816e740",
+      "reason": "validation_rejected"
+    }
+  },
+  {
+    "id": "ted-516446-2026",
+    "synthetic": false,
+    "title": "Dostawa 3 sztuk ambulansów podstawowych wraz z wyposażeniem, w wykonaniu furgon, z napędem 4x4 i DMC powyżej 3,5 t",
+    "description": "Przedmiotem zamówienia jest dostawa 3 (trzech) fabrycznie nowych ambulansów podstawowych – ambulansów drogowych typu C, w wykonaniu furgon, z napędem 4x4 i DMC powyżej 3,5 t, wraz z zabudową specjalistyczną i wyposażeniem określonym w Zamówieniu Podstawowym oraz wyceną Prawa Opcji. Szczegółowy opis przedmiotu zamówienia zawiera Załącznik nr 1 do SWZ. Zamówienie Podstawowe obejmuje dostawę 3 kompletnych ambulansów, z których każdy posiada w szczególności: automatyczną lub manualną skrzynię biegów; mechaniczny system transportu pacjenta obejmujący nosze i wózek zgodne z PN-EN 1865 lub normą równoważną; mechaniczną podstawę/lawetę pod nosze z przesuwem bocznym. Prawo Opcji obejmuje: 1) O.1 - dopłatę za zastąpienie mechanicznego systemu noszy systemem elektryczno-hydraulicznym wraz z systemem ładowania z instalacji pojazdu - od 0 do 3 pojazdów; 2) O.2 – defibrylator przenośny wraz z podstawą do montażu na panelu ściennym - od 0 do 3 sztuk; 3) O.3 - system aktywnej dezynfekcji przedziału medycznego - od 0 do 3 pojazdów; 4) O.4 - komplet szyn unieruchamiających pneumatycznych - od 0 do 3 kompletów; 5) O.5 - komplet szyn unieruchamiających typu SPLINT - od 0 do 3 kompletów; 6) O.6 - mater",
+    "country": "Poland",
+    "region": "European Union",
+    "category": "Transport equipment",
+    "keywords": [
+      "dostawa",
+      "sztuk",
+      "ambulansów",
+      "podstawowych",
+      "wraz",
+      "wyposa",
+      "eniem",
+      "wykonaniu",
+      "CPV 34114121",
+      "CPV 33192160"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-11",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516446-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516446-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "e9256c6b00f061f211ca802eafb523faf932a6e318c87a1093ff9ad7b82c5f8a",
+      "reason": "validation_rejected"
+    }
+  },
+  {
+    "id": "ted-516169-2026",
+    "synthetic": false,
+    "title": "Pipe frame doors (VE035), CVK, DHZC",
+    "description": "The Charité University Medicine Berlin, Campus Virchow Clinic (CVK), Augustenburger Platz 1, 13353, is tendering the following construction work for the new building of the German Heart Center of the Charité including emergency department (ZNA) and central sterile supply department (ZSVA), CVK (DHZC): Steel-glass interior door elements 475 units, bullet-resistant interior doors 10 units, bullet-resistant interior windows 5 units. There are special requirements according to the Berlin Tendering and Procurement Act (BerlAVG), see tender documents. Further information can be found in the documents provided on the Charité tender platform (https://vergabeplattform.charite.de).",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "rohrrahmentüren",
+      "ve035",
+      "dhzc",
+      "charité-universitätsmedizin",
+      "berlin",
+      "campus",
+      "virchow-klinikum",
+      "augustenburger",
+      "CPV 45421100"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-12",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516169-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516169-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "original_title": "Rohrrahmentüren (VE035), CVK, DHZC",
+    "original_description": "Die Charité-Universitätsmedizin Berlin, Campus Virchow-Klinikum (CVK), Augustenburger Platz 1, 13353 schreibt für den Neubau des Deutschen Herzzentrums der Charité inkl. ZNA und ZSVA, CVK (DHZC) folgende Bauleistung aus: Stahl - Glas - Innentürelemente 475 St. Durchschusshemmende Innentüren 10 St. Durchschusshemmende Innenfenster 5 St. Es bestehen gesonderte Anforderungen nach dem Berliner Ausschreibungs- und Vergabegesetz (BerlAVG), siehe Vergabeunterlagen. Nähere Informationen können den auf der Vergabeplattform der Charité (https://vergabeplattform.charite.de) zur Verfügung gestellten Unterlagen entnommen werden.",
+    "translation": {
+      "status": "machine_translated",
+      "display_language": "en",
+      "source_language": "German",
+      "provider": "GitHub Models",
+      "model": "openai/gpt-4.1-mini",
+      "source_hash": "b6fd2036ffb4c2291fb9793dcfce2d9fd00151644547d752f103507db00bb297",
+      "translated_at": "2026-07-27T10:12:00+00:00"
+    }
+  },
+  {
+    "id": "ted-516263-2026",
+    "synthetic": false,
+    "title": "Budowa odcinka ul. Wiosennej w Starachowicach",
+    "description": "Przedmiotem zamówienia jest budowa odcinka ul. Wiosennej w Starachowicach. Główny zakres zamówienia: • budowa drogi długości 809 m: szerokość jezdni 5,00 – 6,50 m, szerokość chodników 1,50 –2,00 m, szerokość drogi rowerowej 2,00 – 3,00 m, • budowa oświetlenia, • wykonanie kanalizacji deszczowej, • budowa kanału technologicznego. Szczegółowy opis przedmiotu zamówienia określają: dokumentacja projektowa, specyfikacje techniczne wykonania i odbioru robót budowlanych i przedmiar robót. Obiekty powstałe w wyniku realizacji niniejszego zamówienia, przeznaczone są dla wszystkich użytkowników, w szczególności ułatwi poruszanie się osobom z niepełnosprawnością ruchową. Zamawiający nie wymaga, ale przewiduje możliwość odbycia wizji lokalnej przez Wykonawcę, przed złożeniem oferty. Z uwagi na to, że zamówienie obejmuje roboty w terenie ogólnodostępnym, Wykonawca może dokonać wizji lokalnej samodzielnie. Zamawiający wymaga zatrudnienia przez Wykonawcę lub podwykonawcę na podstawie stosunku pracy, w rozumieniu art. 22 § 1 ustawy z dnia 26 czerwca 1974 r. Kodeks pracy, osób wykonujących wskazane czynności związane z realizacją zamówienia tj.: wykonywanie robót drogowych, elektrycznych, sanitarny",
+    "country": "Poland",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "budowa",
+      "odcinka",
+      "wiosennej",
+      "starachowicach",
+      "przedmiotem",
+      "zamówienia",
+      "jest",
+      "ówny",
+      "CPV 45233120"
+    ],
+    "value": 4951361.48,
+    "currency": "PLN",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-17",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516263-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516263-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "d674998bdd3dfec6aefb8295cb1d445d05012aded96b94c35ab0145c2104a0ff",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516709-2026",
+    "synthetic": false,
+    "title": "Nový objekt gynekologicko-porodnického komplexu – Zhotovitel stavby",
+    "description": "Předmětem veřejné zakázky je realizace díla „Nový objekt gynekologicko-porodnického komplexu“, a to dle projektové dokumentace pro vydání společného povolení tvořící přílohu zadávací dokumentace č. 2 a navazující projektové dokumentace pro provádění stavby tvořící přílohu zadávací dokumentace č. 4 a za podmínek vyplývajících z pravomocného společného povolení tvořícího přílohu zadávací dokumentace č. 3 (dále jen „Stavba“ či „Dílo“) v areálu zadavatele za jeho provozu a související nezbytné stavební a inženýrské činnosti. Výsledkem zadávacího řízení je uzavření smlouvy o dílo (včetně dalších dokumentů, které smlouvu o dílo tvoří) dle Smluvních podmínek pro výstavbu pozemních a inženýrských staveb projektovaných objednatelem, tzv. FIDIC RED BOOK, 1. vydání, 1999, vydaných v českém překladu Českou asociací konzultačních inženýrů (CACE) a dalších dokumentů tvořících smlouvu o dílo. Podrobné vymezení předmětu veřejné zakázky, včetně technických podmínek v podrobnostech nezbytných pro zpracování nabídky, je uvedeno v přílohách zadávací dokumentace.",
+    "country": "Czechia",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "nový",
+      "objekt",
+      "gynekologicko-porodnického",
+      "komplexu",
+      "zhotovitel",
+      "stavby",
+      "ejné",
+      "zakázky",
+      "CPV 45215120",
+      "CPV 45215140"
+    ],
+    "value": 1761592565.0,
+    "currency": "CZK",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-17",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516709-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516709-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "d0d43e3276453343e398ac8949b55d3213ddc048bbfa1161b86ee81234c8771e",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516344-2026",
+    "synthetic": false,
+    "title": "Świadczenie usług zimowego utrzymania dróg powiatowych oraz chodników położonych na terenie Powiatu Gdańskiego w sezonie zimowym 2026/2027",
+    "description": "Przedmiotem zamówienia jest świadczenie usług zimowego utrzymania dróg powiatowych oraz chodników położonych na terenie Powiatu Gdańskiego w sezonie zimowym 2026/2027, obejmujących w szczególności odśnieżanie dróg i chodników, zwalczanie śliskości zimowej poprzez posypywanie nawierzchni materiałami uszorstniającymi, odśnieżanie z jednoczesnym posypywaniem, wykonywanie prac z użyciem sprzętu ciężkiego w przypadku intensywnych opadów śniegu lub zawiei śnieżnych oraz pozimowe oczyszczanie dróg i chodników z zalegającego piasku i innych zanieczyszczeń wraz z ich wywozem i zagospodarowaniem zgodnie z obowiązującymi przepisami. Zamówienie obejmuje zapewnienie całodobowej gotowości do świadczenia usług, utrzymanie przejezdności dróg oraz zapewnienie bezpiecznego korzystania z chodników zgodnie z wymaganiami określonymi w Opisie Przedmiotu Zamówienia. Zamówienie zostało podzielone na sześć części odpowiadających obwodom zimowego utrzymania dróg Powiatu Gdańskiego.",
+    "country": "Poland",
+    "region": "European Union",
+    "category": "Environmental services",
+    "keywords": [
+      "wiadczenie",
+      "zimowego",
+      "utrzymania",
+      "dróg",
+      "powiatowych",
       "oraz",
-      "odkamieniania",
-      "yszczania",
-      "CPV 39831250"
+      "chodników",
+      "onych",
+      "CPV 90620000",
+      "CPV 90630000"
     ],
     "value": 0.0,
     "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-28",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513664-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516344-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513664-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516344-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
+      ],
+      "normalized_fields": [
+        "country"
       ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "85e3ddc0da1bd5282408b2cb42956712a6d600ebfdbd18516c2aca429f9a0238",
+      "reason": "translation_budget"
     }
   },
   {
-    "id": "ted-513812-2026",
+    "id": "ted-516464-2026",
     "synthetic": false,
-    "title": "Accord-cadre pluriannuel de 48 mois (2026-2030) pour la construction des hangars dans les divers quartiers de la Défense",
-    "description": "Marché de travaux relatif à la construction de hangars dans les divers quarties de la Défense, conformément aux conditions du présent CSCh. Dans le cadre de la conception et de la construction de hangars au profit de la Défense, l’adjudicataire est chargé de l’exécution complète de la mission, ce qui implique à la fois la conception et la réalisation. Il assure également les différentes tâches connexes telles que la coordination sécurité et santé, le processus collaboratif de Building Information Modeling (BIM) et la modélisation BIM, ainsi que le contrôle qualité de l’ensemble des documents établis, tant en phase d’étude qu’en phase d’exécution. Vu la complexité du marché et afin d’éviter toute incertitude relative au présent CSCh, le pouvoir adjudicateur a décidé d’organiser une session d’information à l’intention des soumissionnaires potentiels entre la publication de l’avis du marché et l’ouverture des offres. Elle aura lieu : le 27 mai 2026 à 14:00 heures et le 25 juin 2026 à 10:30 heures. La présence à une des réunions d’information est obligatoire. Tout soumissionnaire qui n’aura pas participé à une des réunions obligatoires verra son offre frappée d’irrégularité. Voir Parag",
-    "country": "Belgium",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "accord-cadre",
-      "pluriannuel",
-      "mois",
-      "pour",
-      "construction",
-      "hangars",
-      "dans",
-      "divers",
-      "CPV 45000000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-08-31",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513812-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513812-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513078-2026",
-    "synthetic": false,
-    "title": "Lavori di manutenzione invernale Cantone dei Grigioni, Circondario 2, Incarico no. 9",
-    "description": "Lavori di manutenzione invernale, sgombero neve e servizio di spandimento",
-    "country": "CH",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "lavori",
-      "manutenzione",
-      "invernale",
-      "cantone",
-      "grigioni",
-      "circondario",
-      "incarico",
-      "sgombero",
-      "CPV 90620000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-01",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513078-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513078-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513358-2026",
-    "synthetic": false,
-    "title": "Winterdienstarbeiten Kanton Graubünden, Bezirk 6, Auftrag Nr. 22",
-    "description": "Winterdienstarbeiten, Schneeräumung und Streudienst",
-    "country": "CH",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "winterdienstarbeiten",
-      "kanton",
-      "graubünden",
-      "bezirk",
-      "auftrag",
-      "schneeräumung",
-      "streudienst",
-      "CPV 90620000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-01",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513358-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513358-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513803-2026",
-    "synthetic": false,
-    "title": "Winterdienstarbeiten Kanton Graubünden, Bezirk 6, Auftrag Nr. 8",
-    "description": "Winterdienstarbeiten, Schneeräumung und Streudienst",
-    "country": "CH",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "winterdienstarbeiten",
-      "kanton",
-      "graubünden",
-      "bezirk",
-      "auftrag",
-      "schneeräumung",
-      "streudienst",
-      "CPV 90620000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-01",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513803-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513803-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513961-2026",
-    "synthetic": false,
-    "title": "Winterdienstarbeiten Kanton Graubünden Bezirk 7 Auftrag Nr. 24",
-    "description": "Winterdienstarbeiten, Schneeräumung und Streudienst",
-    "country": "CH",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "winterdienstarbeiten",
-      "kanton",
-      "graubünden",
-      "bezirk",
-      "auftrag",
-      "schneeräumung",
-      "streudienst",
-      "CPV 90620000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-01",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513961-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513961-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513972-2026",
-    "synthetic": false,
-    "title": "Winterdienstarbeiten Kanton Graubünden, Bezirk 5, Auftrag Nr. 1",
-    "description": "Winterdienstarbeiten, Schneeräumung",
-    "country": "CH",
-    "region": "European Union",
-    "category": "Environmental services",
-    "keywords": [
-      "winterdienstarbeiten",
-      "kanton",
-      "graubünden",
-      "bezirk",
-      "auftrag",
-      "schneeräumung",
-      "CPV 90620000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-01",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513972-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513972-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513096-2026",
-    "synthetic": false,
-    "title": "Rozbudowa infrastruktury ładowania autobusów elektrycznych na zajezdni autobusowej przy ul. Chemicznej w Zielonej Górze.",
-    "description": "1. Przedmiotem zamówienia jest wykonanie w systemie „zaprojektuj i wybuduj\" pełnego zakresu prac obejmującego opracowanie kompletnej dokumentacji projektowej, realizację robót budowlanych, dostawę, montaż oraz uruchomienie infrastruktury ładowania autobusów elektrycznych, a następnie przekazanie jej do eksploatacji — na terenie istniejącej zajezdni autobusowej Miejskiego Zakładu Komunikacji sp. z o.o. przy ulicy Chemicznej 8 w Zielonej Górze, na działce ewidencyjnej nr 44/4, obręb ewidencyjny 3, jednostka ewidencyjna 086201_1. 2. Przedmiot zamówienia został szczegółowo opisany w Załączniku nr 1 do SWZ – Opis przedmiotu zamówienia (OPZ), w Załączniku nr 2 do SWZ – Projektowe postanowienia umowy (PPU) oraz w Załączniku nr 3 do SWZ – Formularz oferty. Dokumenty wskazane w zdaniu poprzednim będą traktowane jako wzajemnie uzupełniające i wyjaśniające się w tym znaczeniu, iż w przypadku stwierdzenia w ich treści jakichkolwiek niejednoznaczności lub wieloznaczności, żadna ze Stron nie może powoływać się na tą okoliczność w celu ograniczenia swoich zobowiązań lub zakresu wymaganej staranności.",
-    "country": "PO",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "rozbudowa",
-      "infrastruktury",
-      "adowania",
-      "autobusów",
-      "elektrycznych",
-      "zajezdni",
-      "autobusowej",
-      "przy",
-      "CPV 45310000",
-      "CPV 31681500"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-08",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513096-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513096-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513865-2026",
-    "synthetic": false,
-    "title": "Accord-cadre de travaux tous corps d'état dans les bâtiments territoriaux",
-    "description": "Accord-cadre de travaux tous corps d'état dans les bâtiments territoriaux",
-    "country": "France",
-    "region": "European Union",
-    "category": "Construction works",
-    "keywords": [
-      "accord-cadre",
-      "travaux",
-      "tous",
-      "corps",
-      "état",
-      "dans",
-      "bâtiments",
-      "territoriaux",
-      "CPV 45000000",
-      "CPV 45262522"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-08",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513865-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513865-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-513169-2026",
-    "synthetic": false,
-    "title": "Exploitation et gestion du marché de la Ville",
-    "description": "Le Délégant confie au Délégataire, au titre du Contrat, l'exploitation du marché d'approvisionnement. Le Délégataire s'engage à organiser le marché selon les horaires, la fréquence et les jours fixés par le Délégant, en garantissant notamment la sécurité des usagers et des commerçants, la continuité du service, la qualité et la bonne organisation de sa mission, ainsi que la mutabilité du service.",
-    "country": "France",
+    "title": "Badanie podłużne funkcjonowania edukacyjnego, dobrostanu i kompetencji uczniów szkół ponadpodstawowych ze szczególnym uwzględnieniem uczniów z doświadczeniem migracji lub uchodźstwa",
+    "description": "1. Przedmiotem zamówienia jest kompleksowe przygotowanie i realizacja dwóch edycji badania podłużnego uczniów szkół ponadpodstawowych oraz dwóch edycji badania kadry zarządzającej szkołami, wraz z rekrutacją szkół i uczestników, realizacją terenową, obsługą techniczną i logistyczną, zebraniem danych administracyjnych, przygotowaniem i integracją danych w zakresie określonym w OPZ oraz przekazaniem baz i raportów. 2. Szczegółowy opis przedmiotu zamówienia, grup respondentów, zakres narzędzi, harmonogram, wymagania techniczne, wskaźniki realizacji, zasady odbioru i rozliczenia określa Załącznik nr 1 do SWZ – Opis Przedmiotu Zamówienia („OPZ”). 3. Wspólny Słownik Zamówień (CPV): 79315000-5 – Usługi badań społecznych. 4. Zamówienie jest realizowane w ramach zadania zleconego przez MEN „Dobrostan Społeczności Szkolnej”, moduł 2 programu „Przyjazna szkoła” na lata 2025–2027, współfinansowanego ze środków Europejskiego Funduszu Społecznego Plus w ramach FERS 2021–2027. 5. Ilekroć w dokumentach zamówienia użyto określeń „kierownik projektu” oraz „kierownik badania”, rozumie się przez nie tę samą osobę wskazaną przez Wykonawcę do całościowej koordynacji realizacji zamówienia, której doświad",
+    "country": "Poland",
     "region": "European Union",
     "category": "Business services",
     "keywords": [
-      "exploitation",
-      "gestion",
-      "marché",
-      "ville",
-      "délégant",
-      "confie",
-      "délégataire",
-      "titre",
-      "CPV 79956000",
-      "CPV 55900000"
+      "badanie",
+      "funkcjonowania",
+      "edukacyjnego",
+      "dobrostanu",
+      "kompetencji",
+      "uczniów",
+      "szkó",
+      "ponadpodstawowych",
+      "CPV 79315000"
     ],
-    "value": 0.0,
-    "currency": "EUR",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-11",
+    "value": 4414951.2,
+    "currency": "PLN",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513169-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516464-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513169-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516464-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "c0661a0f3765e4233cd5c5311d8a37d61cdffae76c719289908333f2c48b0ce4",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516494-2026",
+    "synthetic": false,
+    "title": "Servicio de limpieza integral de la estación de autobuses de León y del centro de control del transporte de Castilla y León (CECOCYL)",
+    "description": "Servicio de limpieza integral de la estación de autobuses de León y del centro de control del transporte de Castilla y León (CECOCYL)",
+    "country": "Spain",
+    "region": "European Union",
+    "category": "Environmental services",
+    "keywords": [
+      "servicio",
+      "limpieza",
+      "integral",
+      "estación",
+      "autobuses",
+      "león",
+      "centro",
+      "control",
+      "CPV 90910000",
+      "CPV 90911200"
+    ],
+    "value": 315260.8,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516494-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516494-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "53e2fd3a92d48fd8f27f7966467dfdfa9695023727f719b01b9a3c958e304cf5",
+      "reason": "translation_budget"
     }
   },
   {
-    "id": "ted-513466-2026",
+    "id": "ted-516501-2026",
     "synthetic": false,
-    "title": "Prestations ponctuelles d'appoint de nettoyage de sols, vitrerie et autres éléments des bâtiments publics des structures associées",
-    "description": "La présente consultation concerne des prestations ponctuelles d'appoint de nettoyage de sols, vitrerie et autres éléments des bâtiments publics des structures associées",
+    "title": "„Zakup skanera 3D z oprogramowaniem do obsługi urządzenia, stolikiem obrotowym i akcesoriami”",
+    "description": "1.Przedmiotem zamówienia jest zakup skanera 3D z oprogramowaniem do obsługi urządzenia, stolikiem obrotowym i akcesoriami. Szczegółowy opis przedmiotu zamówienia zawiera załącznik nr 6 do SWZ.",
+    "country": "Poland",
+    "region": "European Union",
+    "category": "Laboratory equipment",
+    "keywords": [
+      "zakup",
+      "skanera",
+      "oprogramowaniem",
+      "dzenia",
+      "stolikiem",
+      "obrotowym",
+      "akcesoriami",
+      "przedmiotem",
+      "CPV 38520000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516501-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516501-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "bda24eac8297c9fba11741abad232ec60de40b207528c6f5a0e2bd4110d6d182",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516609-2026",
+    "synthetic": false,
+    "title": "Achizitie dotari componenta A - Realizarea Muzeului Civilizatiei Dacice - Machete si replici",
+    "description": "Contractul de achizitie vizeaza atribuirea având ca obiect Achizitie dotari componenta A - Realizarea Muzeului Civilizatiei Dacice - Machete si replici Numarul de zile pana la care se pot solicita clarificariinainte de data limita de depunere a ofertelor: este de 20 zile. Autoritatea contractanta va raspunde la solicitarile de clarificari in a 11 a zi inainte de termenul limita stabilit pentru depunerea ofertelor in anuntul de participare .",
+    "country": "Romania",
+    "region": "European Union",
+    "category": "Transport equipment",
+    "keywords": [
+      "achizitie",
+      "dotari",
+      "componenta",
+      "realizarea",
+      "muzeului",
+      "civilizatiei",
+      "dacice",
+      "machete",
+      "CPV 34999400"
+    ],
+    "value": 929547.88,
+    "currency": "RON",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516609-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516609-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "980c43570be7a541aade34cb23bd8c0f40c3ee01a0996c9c98c22b772c316773",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516705-2026",
+    "synthetic": false,
+    "title": "Verpflegungsdienste in der Erstaufnahmeeinrichtung Garmischer Straße, München",
+    "description": "Der Freistaat Bayern, vertreten durch die Regierung von Oberbayern ist zuständig für den Betrieb der Erstaufnahmeeinrichtung Garmischer Straße 2-12, 80339 München – nachfolgend „EAE“ genannt. Die EAE ist die erste Anlaufstelle für alle Personen, die im Rahmen eines Asylverfahrens nach Oberbayern kommen und dient der ersten Aufnahme, der Registrierung und Weiterleitung der Asylsuchenden innerhalb und außerhalb Oberbayerns. Ihr Aufenthalt beträgt dort in der Regel wenige Tage bis wenige Wochen. Der Auftraggeber beauftragt den Auftragnehmer mit dem Catering in Form einer vollwertigen Speisen- und Getränkeversorgung sowie der Lieferung von Lunchpaketen nach entsprechendem Einzelabruf. Während der Vertragslaufzeit kann es zum Wegfall bzw. zur späteren Wiederaufstockung einzelner im Leistungsumfang enthaltener Leistungen kommen. Bei der EAE handelt es sich um eine sozial sensible Liegenschaft. Der besonderen Sensibilität des Schutzauftrags, der erhöhten Öffentlichkeitswirkung und den besonderen Rahmenbedingungen im Umgang mit ausländischen Flüchtlingen (z.B. Sprachbarrieren, Traumata sowie unterschiedliche Mentalitäten und Kulturen) ist besonders Rechnung zu tragen. Der AN und die von ih",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Hotel and restaurant services",
+    "keywords": [
+      "verpflegungsdienste",
+      "erstaufnahmeeinrichtung",
+      "garmischer",
+      "straße",
+      "münchen",
+      "freistaat",
+      "bayern",
+      "vertreten",
+      "CPV 55500000",
+      "CPV 15894000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516705-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516705-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "source_english",
+      "display_language": "en",
+      "source_language": "English",
+      "source_hash": "0d83d4df5a9e4e33d140fc9b96d2737634c2070a0d1105dd4691ead3c0954feb"
+    }
+  },
+  {
+    "id": "ted-516744-2026",
+    "synthetic": false,
+    "title": "„Доставка на риба за нуждите на детските заведения на територията на община Свищов“ по обособени позиции",
+    "description": "1. Предмет на обществената поръчка: „Доставка на риба за нуждите на детските заведения на територията на община Свищов“ със следните обособени позиции: Обособена позиция №1 – Риба; Обособена позиция №2 – Биологични хранителни продукти – риба.. 2. Описание на предмета на обществената поръчка: Прогнозни количества за период от 1 година: За Обособена позиция №1 Доставка на риба – 2 700 кг. За обособена позиция №2 Доставка на биологични хранителни продукти – риба - 170 кг. При доставките за отделните видове хранителни продукти/стоки трябва да бъдат спазени изискванията към разфасовката им, посочени в настоящата техническа спецификация. Всяка доставка да бъде удостоверена с документ за датата на производство на съответния продукт и срок на годност. За всички хранителни продукти трябва да бъдат спазени изискванията за качество, стандартите на съответните производители и действащите нормативни актове на Република България и регламентите на ЕС, регламентиращи производство, предлагането и транспортирането на хранителни продукти в страната. Посочените в Техническите спецификации по обособените позиции количества продукти се явяват прогнозни (ориентировъчни), а не константни за периода на изп",
+    "country": "Bulgaria",
+    "region": "European Union",
+    "category": "General procurement",
+    "keywords": [
+      "CPV 15221000"
+    ],
+    "value": 23200.0,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516744-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516744-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "a74b7e1bf1e4e8cfeaa4afa3bf11cb77619fe5d411cc71028210c10dcb77e2ca",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516741-2026",
+    "synthetic": false,
+    "title": "Prestations de courtage/conseil d'assurance relatives aux contrats d'assurances Prévoyance et Frais de Santé du groupe BATIGERE",
+    "description": "Prestations de courtage/conseil d'assurance relatives aux contrats d'assurances Prévoyance et Frais de Santé du personnel de l'UES et Réseau BATIGERE, à compter du 1er janvier 2027. Marché global structuré comme suit : - Tranche ferme : Prestations de courtage/conseil d'assurance relatives aux contrats d'assurances Prévoyance et Frais de Santé du groupe BATIGERE pour le compte des membres du groupement de commandes. - Tranches optionnelles n°1 à 6 : Réalisation des prestations similaires pour une nouvelle structure adhérente au groupement de commandes (assuré additionnel)",
+    "country": "France",
+    "region": "European Union",
+    "category": "Financial and insurance services",
+    "keywords": [
+      "prestations",
+      "courtage",
+      "conseil",
+      "assurance",
+      "relatives",
+      "contrats",
+      "assurances",
+      "prévoyance",
+      "CPV 66518100"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-24",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516741-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516741-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "1a84a42094d7e6da6eab207cf1a2c7c7476c635f3eefaa134f839e5ed972350e",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516191-2026",
+    "synthetic": false,
+    "title": "Entsorgungsdienstleistungen für die Gesundheit Nord gGmbH in Bremen",
+    "description": "Die Gesundheit Nord gGmbH, Klinikverbund Bremen (GeNo) ist einer der größten kommunalen Krankenhauskonzerne in der Bundesrepublik. Zum Unternehmen gehören die vier Krankenhäuser Klinikum Bremen-Mitte, Klinikum Links der Weser, Klinikum Bremen-Ost und Klinikum Bremen-Nord sowie das medizinische Versorgungszentrum Bremen (MVZ). Die rund 8.200 Mitarbeiterinnen und Mitarbeiter versorgen jährlich ca. 120.000 Patienten stationär und teilstationär und weitere 200.000 Patienten ambulant. Das Spektrum der medizinischen Leistungen reicht von der Versorgung von Unfallopfern bis zu hochspezialisierten Operationsmethoden, von der Geburtshilfe bis zur Altersmedizin, von der Transplantation bis zur Rehabilitation. Der Klinikverbund deckt mit seinem Spektrum der medizinischen Leistungen fast alle medizinischen Disziplinen ab. Gegenstand des vorliegenden Vergabeverfahrens ist die Umsetzung eines zentral koordinierten Managements von Abfällen zur Verwertung und Beseitigung einschließlich der Erbringung von Dienstleistungen in den Bereichen Entsorgung, Personalgestellung und Logistik für den Klinikverbund Gesundheit Nord gGmbH (Auftraggeber - AG). Die nachstehenden Leistungen sind an folgenden Stando",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Environmental services",
+    "keywords": [
+      "entsorgungsdienstleistungen",
+      "gesundheit",
+      "nord",
+      "ggmbh",
+      "bremen",
+      "klinikverbund",
+      "geno",
+      "einer",
+      "CPV 90000000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-25",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516191-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516191-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "12689ec5987ab5f197a7dbd6e3c6c59194a636506a5924830a0ba9e99a10ce4c",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516615-2026",
+    "synthetic": false,
+    "title": "IGS Embsen Erweiterung Cluster Blau-Orange - Bodenbelagsarbeiten",
+    "description": "Bodenbelagsarbeiten",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "embsen",
+      "erweiterung",
+      "cluster",
+      "blau-orange",
+      "bodenbelagsarbeiten",
+      "CPV 45430000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-25",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516615-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516615-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "8b78bd9fb2ab6b34316c8bc91e19bf2aeaf0d1ec2e72513e22f09253ba95655e",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516739-2026",
+    "synthetic": false,
+    "title": "Gebäudereinigungsarbeiten in öffentlichen Gebäuden der Gemeinde Gingen a.d.Fils",
+    "description": "Leistungen der Unterhaltsreinigung, Grundreinigung sowie Glas- und Fensterreinigung",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Environmental services",
+    "keywords": [
+      "gebäudereinigungsarbeiten",
+      "öffentlichen",
+      "gebäuden",
+      "gemeinde",
+      "gingen",
+      "fils",
+      "leistungen",
+      "unterhaltsreinigung",
+      "CPV 90911200",
+      "CPV 90911300"
+    ],
+    "value": 445420.0,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-25",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516739-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516739-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "718caa67b766888a0d59edd7bdc5318955405769a6be90185115c4fda597dc0e",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516430-2026",
+    "synthetic": false,
+    "title": "Nestandartiniai mokykliniai baldai (Domeikavos mokyklai) (Atviras (tarptautinis) pirkimas)",
+    "description": "Pirkimo objektas – nestandartiniai mokykliniai baldai Domeikavos mokyklai (Vyturio g. 1, Domeikavos sen., Kauno r. sav.). Pirkimo objektas skaidomas į 2 (dvi) pirkimo dalis: I pirkimo dalis – bendrų klasių (penkių segmentų) spintos, 20 vnt.; II pirkimo dalis – spintos ir amfiteatro baldas, 13 vnt.",
+    "country": "Lithuania",
+    "region": "European Union",
+    "category": "Furniture",
+    "keywords": [
+      "nestandartiniai",
+      "mokykliniai",
+      "baldai",
+      "domeikavos",
+      "mokyklai",
+      "atviras",
+      "tarptautinis",
+      "pirkimas",
+      "CPV 39160000"
+    ],
+    "value": 0.0,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-26",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516430-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516430-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "678edf8b88db99a244e6dc15629b68da834b7fd2e2754be5eddd6dab438cc25a",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516686-2026",
+    "synthetic": false,
+    "title": "302-02 Gerüstarbeiten | Erweiterung und Generalsanierung Realschule Thannhausen",
+    "description": "Die Christoph-von-Schmid Realschule Thannhausen soll bis 2028 generalsaniert werden. Hierzu wurde ein Teil des bestehenden Gebäudes abgebrochen. Im Bauabschnitt 1 wurde der neue Erweiterungsbau inkl. Pausenhalle barrierefrei errichtet. Im Bauabschnitt 2 werden weitere kleine Gebäudeteile abgebrochen. Der Bestand wird umgebaut und komplett saniert. Gegenstand der aktuellen Vergabe sind die Gerüstarbeiten des zu sanierenden Bestandsgebäudeteils.",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "gerüstarbeiten",
+      "erweiterung",
+      "generalsanierung",
+      "realschule",
+      "thannhausen",
+      "christoph-von-schmid",
+      "soll",
+      "generalsaniert",
+      "CPV 45262100"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-26",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516686-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516686-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "b7959f07722d3926badadf9b8141d4695cf88f24b6702fcd15a7ee28a88f9cd7",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516432-2026",
+    "synthetic": false,
+    "title": "Gasregelstrecke für Ammoniak - PR1248387-2830-W",
+    "description": "Gasregelstrecke für Ammoniak",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Laboratory equipment",
+    "keywords": [
+      "gasregelstrecke",
+      "ammoniak",
+      "pr1248387-2830-w",
+      "CPV 38570000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-27",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516432-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516432-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "c69446828477abbba3e5dff3cc84894faf518fb428c012783d0ab6a7347aadbc",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516170-2026",
+    "synthetic": false,
+    "title": "Zakup mebli (postępowanie prowadzone z dopuszczeniem składania ofert częściowych – dwie części)",
+    "description": "Zakup mebli (postępowanie prowadzone z dopuszczeniem składania ofert częściowych – dwie części): - Część I: Zakup wraz z dostawą i montażem mebli biurowych do Sali Obsługi Klientów oraz odbiór używanych mebli; - Część II: Zakup wraz z dostawą i montażem mebli biurowych oraz odbiór używanych mebli.",
+    "country": "Poland",
+    "region": "European Union",
+    "category": "Furniture",
+    "keywords": [
+      "zakup",
+      "mebli",
+      "post",
+      "powanie",
+      "prowadzone",
+      "dopuszczeniem",
+      "adania",
+      "ofert",
+      "CPV 39100000",
+      "CPV 39121100"
+    ],
+    "value": 603895.88,
+    "currency": "PLN",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-28",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516170-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516170-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "8d2a97c5e4515edfc3cae4e4a48ca127b3a41420a3058a794b5ed308fcc1afa7",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516388-2026",
+    "synthetic": false,
+    "title": "Servicio de asistencia técnica Oficina Virtual.",
+    "description": "Servicio de asistencia técnica para la definición, diseño e implantación de la Oficina de Trabajo Virtual del Servicio Público de Empleo de Cataluña.",
+    "country": "Spain",
+    "region": "European Union",
+    "category": "IT services",
+    "keywords": [
+      "servicio",
+      "asistencia",
+      "técnica",
+      "oficina",
+      "virtual",
+      "para",
+      "definición",
+      "diseño",
+      "CPV 72000000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-28",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516388-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516388-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "5d37fc2c6ffa091a3e927b887ba1be235709dc773e55633972bdd142d0d46314",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516607-2026",
+    "synthetic": false,
+    "title": "KoPÚ Mělčany u Ivančic",
+    "description": "Předmětem plnění této veřejné zakázky je zpracování návrhu komplexních pozemkových úprav v katastrálním území Mělčany u Ivančic, včetně nezbytných geodetických prací v třídě přesnosti určené pro obnovu katastru nemovitostí vyhláškou č. 357/2013 Sb., o katastru nemovitostí (katastrální vyhláška), ve znění pozdějších předpisů, na základě žádostí vlastníků pozemků podle zákona č. 139/2002 Sb., o pozemkových úpravách a pozemkových úřadech, ve znění pozdějších předpisů s cílem prostorově a funkčně uspořádat vlastnická práva k pozemků a s nimi související věcná břemena, pozemky zpřístupnit a zajistit podmínky pro racionální hospodaření vlastníků půdy a zvýšení ekologické stability krajiny. Výsledky KoPÚ budou sloužit pro obnovu katastrálního operátu a jako neopomenutelný podklad pro územní plánování. Předpokládaná výměra řešeného území činí 684 ha. Do předpokládaného obvodu KoPÚ je zahrnuto 3 537 parcel, zapsaných na 331 listech vlastnictví.",
+    "country": "Czechia",
+    "region": "European Union",
+    "category": "Architecture and engineering",
+    "keywords": [
+      "kopú",
+      "ivan",
+      "této",
+      "ejné",
+      "zakázky",
+      "zpracování",
+      "návrhu",
+      "komplexních",
+      "CPV 71250000"
+    ],
+    "value": 6772147.0,
+    "currency": "CZK",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-28",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516607-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516607-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "bf0cff778387956e3defc31992e99d4f66d3ade36749106c9a1ccdba0bbca551",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516185-2026",
+    "synthetic": false,
+    "title": "Rahmenvereinbarung Hydraulischer Abgleich, Heizlastberechnung und Einbau Thermostatregler",
+    "description": "Fördern & Wohnen ist ein Sozialunternehmen der Freien und Hansestadt Hamburg mit rund 2.200 Mitarbeitenden und über 200 Standorten. Von der Not-Unterkunft bis zur Wohnung mit Assistenz: In unseren 6 Arbeitsfeldern sind wir da für Wohnungslose und Geflüchtete, Menschen mit psychischen Erkrankungen und Behinderungen. Für Menschen, die es auf dem Wohnungsmarkt besonders schwer haben, schaffen wir Wohnungen. Zur Erfüllung der gesetzlichen Anforderungen aus dem Gebäudemodernisierungsgesetz (GModG) ist im Bereich Miet- und Liegenschaftsmanagement (sowie im weiteren Verlauf auch ausgewählte Standorte „Öffentlich-rechtliche Unterbringung (ÖrU)“) der hydraulische Abgleich der Heizungsanlagen sicherzustellen. Dieser ist insbesondere bei der Errichtung, Änderung oder Optimierung von Heizsystemen verpflichtend und dient der energieeffizienten Überprüfung und Optimierung von Heizungsanlagen, um einen wirtschaftlichen und energieeffizienten Betrieb dauerhaft zu gewährleisten. Zur Sicherstellung einer einheitlichen, wirtschaftlichen und jederzeit kurzfristig verfügbaren Leistungserbringung soll eine Rahmenvereinbarung mit einem oder mehreren geeigneten Bietern geschlossen werden. Die Leistungen s",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Architecture and engineering",
+    "keywords": [
+      "rahmenvereinbarung",
+      "hydraulischer",
+      "abgleich",
+      "heizlastberechnung",
+      "einbau",
+      "thermostatregler",
+      "fördern",
+      "wohnen",
+      "CPV 71000000",
+      "CPV 45331000"
+    ],
+    "value": 2000000.0,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-08-31",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516185-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516185-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "1caf9d836fe764cbebfff548d9783cad7b33b85eab872779cefd35c19426e2ee",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516151-2026",
+    "synthetic": false,
+    "title": "26-0159 4. Reinigungsstufe Klärwerk Wolfsburg - Errichtung 4. Reinigungsstufe",
+    "description": "Um den zukünftigen Abwasseranforderungen gerecht zu werden, beabsichtigen die Wolfsburger Entwässerungsbetriebe WEB, die Abwasserreinigung um eine 4. Reinigungsstufe in Form einer Filtration über granulierte Aktivkohle zu ergänzen. Zusätzlich soll eine Absorberharzstufe für einen Teilstrom von 25 m3/h errichtet werden. Die hier ausgeschriebenen Leistungen beinhalten die Planung und betriebsfertige Erstellung einer 4. Reinigungsstufe und der zugehörigen Anlagenperipherie auf dem Klärwerk Wolfsburg-Stahlberg (bau-, maschinen- und elektrotechnische Leistungsbereiche) gemäß den Anforderungen und Randbedingungen der Ausschreibungsunterlagen.",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "reinigungsstufe",
+      "klärwerk",
+      "wolfsburg",
+      "errichtung",
+      "zukünftigen",
+      "abwasseranforderungen",
+      "gerecht",
+      "werden",
+      "CPV 45252127"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-01",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516151-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516151-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "ba178efba8936b38d4287afaab45514542e05d452b85a7118b9f5ba7c26128d4",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516633-2026",
+    "synthetic": false,
+    "title": "Električna energija",
+    "description": "Električna energija",
+    "country": "Croatia",
+    "region": "European Union",
+    "category": "General procurement",
+    "keywords": [
+      "elektri",
+      "energija",
+      "CPV 09310000"
+    ],
+    "value": 1590000.0,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-01",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516633-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516633-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "5f2c7b1395f8edb67aafbd2ab7728a5f40228d5d48d6af4f0421ab513ce66454",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516426-2026",
+    "synthetic": false,
+    "title": "Grundschule Wittenburg 2. BA - Mensa und Bestandsgebäude 10 Lose",
+    "description": "Von der Stadt Wittenburg ist in der Grundschule “Am Friedensring“ in 19243 Wittenburg vorgesehen, das Bestandsschulgebäude zu sanieren und ein Erweiterungsschulbau mit 4 Geschossen zu errichten. Dies geschieht in 3 Bauabschnitten: 1.BA Erweiterungsbau - ist abgeschlossen - 2.BA Umbau und Sanierung des Bestandsgebäudes 3.BA Neuerrichtung der Außenanlagen Eine der Besonderheiten des 2.BA ist die Lage der neu zu errichtenden Mensa im Innenhof. Eine weitere Besonderheit ist der Typenbau aus der DDR Zeit. Die statische Auslastung dieses Systems liegt bei nahezu 100 %. Daher dürfen auch nur freigegebene Bohrungen jeglicher Art ausgeführt werden! Los 4 - Fenster, Türen, Sonnenschutz Los 5 - Fassadenarbeiten Los 8 - Trockenbauarbeiten Los 9 - Estricharbeiten Los 10 - Maler- u. Bodenbelagsarbeiten Los 11 - Fliesenlegearbeiten Los 12 - Schlosserarbeiten Los 20 - Heizung, Sanitär Los 21 - Lüftung Los 30 - Elektro",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "grundschule",
+      "wittenburg",
+      "mensa",
+      "bestandsgebäude",
+      "lose",
+      "stadt",
+      "friedensring",
+      "vorgesehen",
+      "CPV 45214210",
+      "CPV 45421100"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-03",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516426-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516426-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "source_english",
+      "display_language": "en",
+      "source_language": "English",
+      "source_hash": "d11500bce19db851d3536681f4668356061fc282cad640f423be2f25fe743a12"
+    }
+  },
+  {
+    "id": "ted-516701-2026",
+    "synthetic": false,
+    "title": "Προμήθεια καυσίμων και λιπαντικών 2027 και 2028",
+    "description": "Προμήθεια καυσίμων και λιπαντικών, για τις ανάγκες του Δήμου Καλαβρύτων και του Χιονοδρομικού Κέντρου Καλαβρύτων Α.Ε. ΟΤΑ, για τα έτη 2027 και 2028",
+    "country": "Greece",
+    "region": "European Union",
+    "category": "General procurement",
+    "keywords": [
+      "CPV 09100000",
+      "CPV 09211000"
+    ],
+    "value": 980735.68,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-03",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516701-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516701-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "c4f736d163f02d8aef6eb4fc35415a25e24941a2058a06004c307bd57a09fa9b",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516171-2026",
+    "synthetic": false,
+    "title": "PACHET TESTE COAGULARE COMPATIBIL SAU ECHIVALENT CU ANALIZORUL CASCADE ABRAZO",
+    "description": "PACHET TESTE COAGULARE COMPATIBIL SAU ECHIVALENT CU ANALIZORUL CASCADE ABRAZO - CONFORM CAIETULUI DE SARCINI AL ACHIZITIEI",
+    "country": "Romania",
+    "region": "European Union",
+    "category": "Medical equipment",
+    "keywords": [
+      "pachet",
+      "teste",
+      "coagulare",
+      "compatibil",
+      "echivalent",
+      "analizorul",
+      "cascade",
+      "abrazo",
+      "CPV 33696500"
+    ],
+    "value": 1199880.0,
+    "currency": "RON",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-04",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516171-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516171-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "8f279bd96c7883d080cc08d9268d76d9bc02557d43784fe2f5fd955d3bc4a509",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516647-2026",
+    "synthetic": false,
+    "title": "Contratación del servicio de transporte de pacientes en otros medios de los centros asistenciales de FREMAP, Mutua Colaboradora con la Seguridad Social Nº 61, en Girona.",
+    "description": "Las necesidades que deben satisfacerse mediante este procedimiento se especifican, describen en detalle y justifican en la Memoria de Necesidades que se publica con el mismo.",
+    "country": "Spain",
+    "region": "European Union",
+    "category": "Transport services",
+    "keywords": [
+      "contratación",
+      "servicio",
+      "transporte",
+      "pacientes",
+      "otros",
+      "medios",
+      "centros",
+      "asistenciales",
+      "CPV 60100000"
+    ],
+    "value": 1181951.25,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-04",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516647-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516647-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "e7ceb1e4a772fdd73ba9cc140aaf268557adb99ab9c1b7a7d330d526fbf5c768",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516830-2026",
+    "synthetic": false,
+    "title": "Erweiterung Hebelschule, BKP 214.0 Montagebau in Holz",
+    "description": "Montagebau in Holz für Schulhaus.",
+    "country": "Switzerland",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "erweiterung",
+      "hebelschule",
+      "montagebau",
+      "holz",
+      "schulhaus",
+      "CPV 45214210"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-04",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516830-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516830-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ],
+      "normalized_fields": [
+        "country"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "3ad2a0d9ca71ad55d9ad4df556392f0dacc33186f76d644e68cb98fbe5ce2abc",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516583-2026",
+    "synthetic": false,
+    "title": "PROCEDURA APERTA, AI SENSI DELL&#8217;ART. 71 DEL D.LGS. N. 36/2023, PER L&#8217;INDIVIDUAZIONE IMPIANTO DI CONFERIMENTO DEI RIFIUTI INGOMBRANTI PER ANNI DUE. U.O. BARI.",
+    "description": "SERVIZIO PER L'INDIVIDUAZIONE IMPIANTO DI CONFERIMENTO DEI RIFIUTI INGOMBRANTI PER ANNI DUE. U.O. BARI",
+    "country": "Italy",
+    "region": "European Union",
+    "category": "Environmental services",
+    "keywords": [
+      "procedura",
+      "aperta",
+      "sensi",
+      "dell",
+      "individuazione",
+      "impianto",
+      "conferimento",
+      "rifiuti",
+      "CPV 90513000"
+    ],
+    "value": 2880168.75,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-09",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516583-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516583-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "0a5ed55ce0bdcd1b9e4df6ad67eb76f866afb7fe461ab05aff879fd42e0edf66",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516183-2026",
+    "synthetic": false,
+    "title": "Errichtung eines Feuerwehrhauses in innovativer Holzbauweise",
+    "description": "Die Gemeinde Wentorf bei Hamburg plant den Neubau eines Feuerwehrhauses in innovativer Holzbauweise, welches auf dem Grundstück Fritz-Sprecht-Weg 1, 21465 Wentorf bei Hamburg errichtet werden soll. Der Neubau umfasst hierbei insbesondere die folgenden Beschaffenheitsmerkmale: • Grundstücksfläche in Höhe von ca. 10.600 m² • BGF in Höhe von ca. 3.200 m² • Zwei Vollgeschosse • Eine Fahrzeughalle mit Stellplätzen für 9 Löschfahrzeuge sowie einer Waschhalle für ein Löschfahrzeug • Aufenthalts- und Schulungsbereiche für die Freiwillige Feuerwehr sowie die Jugendfeuerwehr • Räumlichkeiten für Einsatz-, Schulungs- und Betriebszwecke • Materiallager über zwei Geschosse • Werkstattbereich für Anlagen der Feuerwehrtechnik • Herstellung eines Übungsturms mit neun Geschosse • Herstellung einer Anbindung an den öffentlichen Straßenverkehr Weitere Details zu den Beschaffenheitsmerkmalen des Neubaus sind den einzelnen Vergabeeinheiten zu entnehmen. Der Neubau soll mit unter Berücksichtigung von Nachhaltigkeits- und Innovationszielen errichtet werden: A – Erfüllung von ausgewählten Anforderungen gemäß Bewertungssystem Nachhaltiges Bauen (BNB) B – Innovationsziele im Holzbau, in Form von: • Verbreit",
+    "country": "Germany",
+    "region": "European Union",
+    "category": "Construction works",
+    "keywords": [
+      "errichtung",
+      "eines",
+      "feuerwehrhauses",
+      "innovativer",
+      "holzbauweise",
+      "gemeinde",
+      "wentorf",
+      "hamburg",
+      "CPV 45216121",
+      "CPV 45421000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-10",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516183-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516183-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "source_english",
+      "display_language": "en",
+      "source_language": "English",
+      "source_hash": "e0daa2d0cb116f232108555051cf90605146a3fa722357b4b1b0ec8992b2cd8b"
+    }
+  },
+  {
+    "id": "ted-516259-2026",
+    "synthetic": false,
+    "title": "SIA Saline",
+    "description": "Procedura aperta per l’affidamento dei servizi di ingegneria e architettura (PFTE, progetto esecutivo. direzione lavori e coordinamento della sicurezza e servizi connessi) necessari per i “lavori ristrutturazione e messa norma edifici 3, 4, 5, 8 ex Saline la Palma Cagliari archivio storico”. Accordo per lo Sviluppo e la Coesione FSC 2021-2027. CUP E22H21000110003 Applicazione clausole e criteri - art. 57 comma 2 del D.lgs. 36/2023",
+    "country": "Italy",
+    "region": "European Union",
+    "category": "Architecture and engineering",
+    "keywords": [
+      "saline",
+      "procedura",
+      "aperta",
+      "affidamento",
+      "servizi",
+      "ingegneria",
+      "architettura",
+      "pfte",
+      "CPV 71240000"
+    ],
+    "value": 892390.06,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-10",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516259-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516259-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "c4035de85d4afa4285b63a776b3862e54538ed71008974128d232ec78fafd855",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516504-2026",
+    "synthetic": false,
+    "title": "Subaffidamento del servizio extraurbano di Trasporto Pubblico Locale a mezzo autobus per il periodo dal 01-01-2027 al 31-12-2030.",
+    "description": "Subaffidamento del servizio extraurbano di Trasporto Pubblico Locale a mezzo autobus per il periodo dal 01-01-2027 al 31-12-2030.",
+    "country": "Italy",
+    "region": "European Union",
+    "category": "Transport services",
+    "keywords": [
+      "subaffidamento",
+      "servizio",
+      "extraurbano",
+      "trasporto",
+      "pubblico",
+      "locale",
+      "mezzo",
+      "autobus",
+      "CPV 60112000"
+    ],
+    "value": 14724073.87,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-11",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516504-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516504-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "ce143e36f650d164b8547fa1b3f2d71b55e434ce454daa37be2bfd4ce726fba9",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516585-2026",
+    "synthetic": false,
+    "title": "SERVICIO DE ATENCIÓN CENTRALIZADA AL PERSONAL TÉCNICO DEL DEPARTAMENTO DE ITPARA EL INSTITUT CATALÀ DE NANOCIENCIA Y NANOTECNOLOGÍA (ICN2)",
+    "description": "el objeto del contrato es la prestación de servicios de atención centralizada al personal técnico del departamento de it de la fundación instituto catalán de nanociencia y nanotecnología (icn2).",
+    "country": "Spain",
+    "region": "European Union",
+    "category": "IT services",
+    "keywords": [
+      "servicio",
+      "atención",
+      "centralizada",
+      "personal",
+      "técnico",
+      "departamento",
+      "itpara",
+      "institut",
+      "CPV 72000000"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-14",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516585-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516585-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "b9d9e93cf6daf5dfa89a1a3546b1ac132386b95a764e8d4bed101b5827594529",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516300-2026",
+    "synthetic": false,
+    "title": "MY26/ITEAM/S/57",
+    "description": "Suministro de equipos de preparación para corte de obleas para la Pilot Line de la UPV (UPV47)",
+    "country": "Spain",
+    "region": "European Union",
+    "category": "Electrical equipment",
+    "keywords": [
+      "my26",
+      "iteam",
+      "suministro",
+      "equipos",
+      "preparación",
+      "para",
+      "corte",
+      "obleas",
+      "CPV 31712110"
+    ],
+    "value": 0.0,
+    "currency": "XXX",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-15",
+    "source": "TED",
+    "source_url": "https://ted.europa.eu/en/notice/516300-2026/xml",
+    "status": "LIVE",
+    "provenance": {
+      "publication_number": "516300-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
+      "generated_fields": [
+        "category",
+        "keywords"
+      ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "3299a3bdefd6454e9f66ab49a9a6f035a9eae2c854b35bded490ae7451741075",
+      "reason": "translation_budget"
+    }
+  },
+  {
+    "id": "ted-516593-2026",
+    "synthetic": false,
+    "title": "Prestations de nettoyage des locaux et de la vitrerie de la grande chancellerie de la Légion d'honneur et de la maison d'éducation de la Légion d'honneur de Saint-Denis",
+    "description": "Le présent marché a pour objet le nettoyage des locaux et de la vitrerie de la grande chancellerie de la Légion d’honneur (75007) et de la maison d’éducation de la Légion d’honneur située au 5 rue de la Légion d’honneur à Saint-Denis (93200).",
     "country": "France",
     "region": "European Union",
     "category": "Environmental services",
     "keywords": [
       "prestations",
-      "ponctuelles",
-      "appoint",
       "nettoyage",
-      "sols",
+      "locaux",
       "vitrerie",
-      "autres",
-      "éléments",
-      "CPV 90910000",
-      "CPV 90911300"
+      "grande",
+      "chancellerie",
+      "légion",
+      "honneur",
+      "CPV 90910000"
     ],
     "value": 0.0,
     "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-11",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-15",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513466-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516593-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513466-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516593-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "cc315251b48623319494befd7937435f905abb000d64acf477f24f907e6fa620",
+      "reason": "translation_budget"
     }
   },
   {
-    "id": "ted-513818-2026",
+    "id": "ted-516444-2026",
     "synthetic": false,
-    "title": "Acquisition de vélos cargo à assistance électrique et remorques, d'équipements et services complémentaires pour du transport de marchandises et activités d'entreprenariat à vélo.",
-    "description": "L'accord-cadre a pour objet l'acquisition de vélos cargo à assistance électrique et remorques, d'équipements et services complémentaires pour du transport de marchandises et activités d'entreprenariat à vélo.",
-    "country": "France",
+    "title": "SUMINISTRO E INSTALACIÓN DE SEÑALIZACIÓN IDENTIFICATIVA DE CANAL DE ISABEL II, S.A., M.P.",
+    "description": "SUMINISTRO E INSTALACIÓN DE SEÑALIZACIÓN IDENTIFICATIVA DE CANAL DE ISABEL II, S.A., M.P.",
+    "country": "Spain",
     "region": "European Union",
     "category": "Transport equipment",
     "keywords": [
-      "acquisition",
-      "vélos",
-      "cargo",
-      "assistance",
-      "électrique",
-      "remorques",
-      "équipements",
-      "complémentaires",
-      "CPV 34430000"
+      "suministro",
+      "instalación",
+      "señalización",
+      "identificativa",
+      "canal",
+      "isabel",
+      "CPV 34928470",
+      "CPV 34928471"
     ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-16",
-    "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513818-2026/xml",
-    "status": "LIVE",
-    "provenance": {
-      "publication_number": "513818-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
-      "generated_fields": [
-        "category",
-        "keywords"
-      ]
-    }
-  },
-  {
-    "id": "ted-514069-2026",
-    "synthetic": false,
-    "title": "Gestion et maintenance de la plateforme GRC, Portail Client et IssyGPT",
-    "description": "Gestion et maintenance de la plateforme GRC, Portail Client et IssyGPT",
-    "country": "France",
-    "region": "European Union",
-    "category": "IT services",
-    "keywords": [
-      "gestion",
-      "maintenance",
-      "plateforme",
-      "portail",
-      "client",
-      "issygpt",
-      "CPV 72260000"
-    ],
-    "value": 0.0,
-    "currency": "XXX",
-    "published_at": "2026-07-24",
+    "value": 1175842.8,
+    "currency": "EUR",
+    "published_at": "2026-07-27",
     "deadline": "2026-09-18",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/514069-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516444-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "514069-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516444-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "6fb55890588171a5a7dc301c17a4ee27840a58c6529e0d293f6c1e36bab27096",
+      "reason": "translation_budget"
     }
   },
   {
-    "id": "ted-513940-2026",
+    "id": "ted-516597-2026",
     "synthetic": false,
-    "title": "Assurances Collectives Prévoyance et Complémentaire frais de santé pour les agents de l'Office de l'Environnement de la Corse.",
-    "description": "La présente consultation concerne un marché public d'assurances pour l'Office de l'environnement de la Corse Assurances relatives à : â¡ Prévoyance du personnel â¡ Complémentaire frais de santé du personnel",
+    "title": "Prestations de services d'assurances-.",
+    "description": "Dans un objectif de mutualisation des compétences et d’optimisation du budget, il a été décidé de constituer un groupement de commandes en application des dispositions du code de la Commande publique, approuvé par tous les organes exécutifs de tous les membres du groupement. La collectivité assure le rôle de coordonnateur du groupement et est chargée de la procédure de passation du ou des marchés à intervenir",
     "country": "France",
     "region": "European Union",
     "category": "Financial and insurance services",
     "keywords": [
-      "assurances",
-      "collectives",
-      "prévoyance",
-      "complémentaire",
-      "frais",
-      "santé",
-      "pour",
-      "agents",
-      "CPV 66512000"
+      "prestations",
+      "assurances-",
+      "dans",
+      "objectif",
+      "mutualisation",
+      "compétences",
+      "optimisation",
+      "budget",
+      "CPV 66510000",
+      "CPV 66515000"
     ],
     "value": 0.0,
     "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-09-22",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-21",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513940-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516597-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513940-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516597-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "3b8814d22d0326e526935f2ad6fe7c459ac598bf5d6efe7b2a8b987a233ee744",
+      "reason": "translation_budget"
     }
   },
   {
-    "id": "ted-513857-2026",
+    "id": "ted-516479-2026",
     "synthetic": false,
-    "title": "Concession de service pour l'exploitation d'un espace de restauration au musée Cognacq-Jay",
-    "description": "La consultation a pour objet la conclusion d'un contrat de concession pour l'aménagement temporaire et l'exploitation d'un espace de petite restauration saisonnier au musée Cognacq-Jay. Il s'agit d'un contrat de concession de services soumis aux articles L. 1121-1 et L. 1121-3 du Code de la Commande Publique, L 1410-1 à L 1410-3, R 1410-1 et R 1410-2 du Code Général des Collectivités Territoriales.",
-    "country": "France",
+    "title": "The hiring of vehicles in Norway",
+    "description": "The purpose of this tender is to establish a Framework Agreement between the Client and 1 Contractor for the on-demand rental and supply of reliable and safe vehicles suitable for the (extreme) weather conditions in Norway. The vehicles must sufficiently meet the specific requirements regarding grip, stability, and performance at low temperatures.",
+    "country": "Netherlands",
     "region": "European Union",
-    "category": "Hotel and restaurant services",
+    "category": "Transport services",
     "keywords": [
-      "concession",
-      "pour",
-      "exploitation",
-      "espace",
-      "restauration",
-      "musée",
-      "cognacq-jay",
-      "consultation",
-      "CPV 55300000",
-      "CPV 75124000"
+      "hiring",
+      "vehicles",
+      "norway",
+      "purpose",
+      "tender",
+      "establish",
+      "framework",
+      "agreement",
+      "CPV 60000000",
+      "CPV 34111000"
     ],
-    "value": 0.0,
+    "value": 7900000.0,
     "currency": "EUR",
-    "published_at": "2026-07-24",
+    "published_at": "2026-07-27",
     "deadline": "2026-09-28",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513857-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516479-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513857-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516479-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "translation": {
+      "status": "source_english",
+      "display_language": "en",
+      "source_language": "English",
+      "source_hash": "c4c698b1fd73bca7b41c40e18cad3d84f4eeaa8277e5eab32e62746f872819cf"
     }
   },
   {
-    "id": "ted-513835-2026",
+    "id": "ted-516358-2026",
     "synthetic": false,
-    "title": "MARCHÉ DE SERVICE RELATIF A LA PRESTATION D'ASSURANCE POUR LES BESOINS DE LA VILLE ET DU CCAS",
-    "description": "Le Groupement de commandes Ville et CCAS de Combourg procède à une consultation en vue de souscrire les contrats d'assurances qui constituent l'ensemble du marché divisé en 5 lots.",
-    "country": "France",
+    "title": "Reutersbrunnenstr. 34, Neubau KJND und KJHZ, Rohbauarbeiten 1.BA",
+    "description": "Erstellung Grundleitungen und Schächte: 470 cbm NO / 1070 cbm NW, Erstellung Außenwände aus Fertigteilen: 44 Stück NO + 44 Stück NW, Erstellung Innenwände aus Fertigteilen: 32 Stück NO + 35 Stück NW, Erstellung Geschossdecken als HBV Konstruktion: 1.900 qm NO + 1.800 qm NW",
+    "country": "Germany",
     "region": "European Union",
-    "category": "Financial and insurance services",
+    "category": "Construction works",
     "keywords": [
-      "marché",
-      "relatif",
-      "prestation",
-      "assurance",
-      "pour",
-      "besoins",
-      "ville",
-      "ccas",
-      "CPV 66515200",
-      "CPV 66512000"
+      "reutersbrunnenstr",
+      "neubau",
+      "kjnd",
+      "kjhz",
+      "rohbauarbeiten",
+      "erstellung",
+      "grundleitungen",
+      "schächte",
+      "CPV 45223220"
     ],
     "value": 0.0,
     "currency": "XXX",
-    "published_at": "2026-07-24",
-    "deadline": "2026-10-06",
+    "published_at": "2026-07-27",
+    "deadline": "2026-09-30",
     "source": "TED",
-    "source_url": "https://ted.europa.eu/en/notice/513835-2026/xml",
+    "source_url": "https://ted.europa.eu/en/notice/516358-2026/xml",
     "status": "LIVE",
     "provenance": {
-      "publication_number": "513835-2026",
-      "retrieved_at": "2026-07-24T02:51:35+00:00",
+      "publication_number": "516358-2026",
+      "retrieved_at": "2026-07-27T10:11:20+00:00",
       "generated_fields": [
         "category",
         "keywords"
       ]
+    },
+    "translation": {
+      "status": "original_only",
+      "display_language": "original",
+      "source_language": "undetermined",
+      "source_hash": "2f31801369df4a3ee0ce6be4008be71895c909601bd9cf145434559acf7c435e",
+      "reason": "translation_budget"
     }
   }
 ]

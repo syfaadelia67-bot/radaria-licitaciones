@@ -1,22 +1,22 @@
 # TenderSignal market brief
 
-Verified notices: **42**  
-Last retrieval: **2026-07-24T02:51:35+00:00**  
+Verified notices: **46**  
+Last retrieval: **2026-07-27T10:11:20+00:00**  
 Source: TED Search API v3; official notices remain authoritative.
 
 ## Notable notices
 
-- [Servicii de supervizare "Proiectare și execuție Autostrada Târgu Mureș-Târgu Neamț Secțiunea II: Miercurea Nirajului-Leghin, Lot 2C: Pipirig-Vânători Neamț (Leghin)"](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513567-2026/) — Romania; Architecture and engineering; 70,913,357 RON; deadline 2026-08-20.
-- [UPOL/PřF/KEF - Systém FIB-SEM včetně analytických technik a nanoindentace](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513059-2026/) — Czechia; Laboratory equipment; 31,452,000 CZK; deadline 2026-08-26.
-- [Fire de sutura neresorbabile](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513726-2026/) — Romania; Medical equipment; 15,274,956 RON; deadline 2026-08-05.
-- [Dogradnja proizvodno-skladišnog farmaceutskog objekta u Dugopolju](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513259-2026/) — Croatia; Construction works; 10,000,000 EUR; deadline 2026-08-17.
-- [Eesti.ai koolitajate tellimine (Riigikantselei)](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513980-2026/) — Spain; Education and training; 5,000,000 EUR; deadline 2026-08-17.
-- [Asysta techniczna i wsparcie serwisowe systemu RayStation](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513312-2026/) — PO; IT services; 1,668,000 PLN; deadline 2026-08-25.
-- [Zakup, dostawa i montaż agregatów prądotwórczych](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513353-2026/) — PO; Electrical equipment; 1,341,404 PLN; deadline 2026-08-21.
-- [Prijevoz učenika osnovnih škola Vukovarsko-srijemske županije](https://syfaadelia67-bot.github.io/radaria-licitaciones/opportunities/ted-513561-2026/) — Croatia; Transport services; 952,734 EUR; deadline 2026-08-13.
+- [Nový objekt gynekologicko-porodnického komplexu – Zhotovitel stavby](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516709-2026/) — Czechia; Construction works; 1,761,592,565 CZK; deadline 2026-08-17.
+- [Subaffidamento del servizio extraurbano di Trasporto Pubblico Locale a mezzo autobus per il periodo dal 01-01-2027 al 31-12-2030.](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516504-2026/) — Italy; Transport services; 14,724,074 EUR; deadline 2026-09-11.
+- [The hiring of vehicles in Norway](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516479-2026/) — Netherlands; Transport services; 7,900,000 EUR; deadline 2026-09-28.
+- [KoPÚ Mělčany u Ivančic](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516607-2026/) — Czechia; Architecture and engineering; 6,772,147 CZK; deadline 2026-08-28.
+- [Expert assessment of the ongoing detailed contractor claim according to FIDIC Red Book according to SFDI methodologies for D3 constructions](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516289-2026/) — Czechia; Architecture and engineering; 5,460,000 CZK; deadline 2026-08-05.
+- [Budowa odcinka ul. Wiosennej w Starachowicach](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516263-2026/) — Poland; Construction works; 4,951,361 PLN; deadline 2026-08-17.
+- [Badanie podłużne funkcjonowania edukacyjnego, dobrostanu i kompetencji uczniów szkół ponadpodstawowych ze szczególnym uwzględnieniem uczniów z doświadczeniem migracji lub uchodźstwa](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516464-2026/) — Poland; Business services; 4,414,951 PLN; deadline 2026-08-24.
+- [PROCEDURA APERTA, AI SENSI DELL&#8217;ART. 71 DEL D.LGS. N. 36/2023, PER L&#8217;INDIVIDUAZIONE IMPIANTO DI CONFERIMENTO DEI RIFIUTI INGOMBRANTI PER ANNI DUE. U.O. BARI.](https://jerechulze.github.io/radaria-licitaciones/opportunities/ted-516583-2026/) — Italy; Environmental services; 2,880,169 EUR; deadline 2026-09-09.
 
 ## Supplier-specific validation
 
-Request a ranked fit report: https://syfaadelia67-bot.github.io/radaria-licitaciones/founder.html?source=market-brief&offer=founder-validation
+Request a ranked fit report: https://jerechulze.github.io/radaria-licitaciones/founder.html?source=market-brief&offer=founder-validation
 
 No payment is collected in the application and applying creates no purchase obligation.

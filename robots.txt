@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://syfaadelia67-bot.github.io/radaria-licitaciones/sitemap.xml
-Sitemap: https://syfaadelia67-bot.github.io/radaria-licitaciones/brief-sitemap.xml
+Sitemap: https://jerechulze.github.io/radaria-licitaciones/sitemap.xml

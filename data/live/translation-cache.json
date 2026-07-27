@@ -1,4 +1,50 @@
 {
   "version": 1,
-  "entries": {}
+  "entries": {
+    "ted-516380-2026": {
+      "id": "ted-516380-2026",
+      "title_en": "Carpentry work, interior construction",
+      "description_en": "Rupprecht-Gymnasium, Albrechtstraße, general renovation and expansion. Trade: Carpentry work, interior construction",
+      "source_language": "German",
+      "source_hash": "2cc88cbf4ac206a6f3b06abf78354a986fd8b47b87acae16a1822f25f97740e3",
+      "model": "openai/gpt-4.1-mini",
+      "translated_at": "2026-07-27T10:11:23+00:00"
+    },
+    "ted-516833-2026": {
+      "id": "ted-516833-2026",
+      "title_en": "Professional supervision and occupational safety coordinator - Construction and reconstruction works of OŠ Vodice",
+      "description_en": "The subject of procurement is the services of professional supervision and occupational safety coordinator during the construction and reconstruction works of OŠ Vodice as part of the project \"Reconstruction and extension of OŠ Vodice, NPOO.C3.1.R1-I2.01-V1.0071,\" in accordance with the cost estimates which are an integral part of this Procurement Documentation. The supervision services under this contract include professional supervision services in accordance with the Construction Act (NN 155/25), the Act on Spatial Planning and Construction Activities (NN 78/15, 118/18, 110/19), and other applicable regulations. It will be considered that the economic operator has thoroughly studied this Procurement Documentation and its annexes before submitting the offer, has obtained all necessary data affecting the provision of the subject services at the specified locations, and has submitted their offer based on all of this.",
+      "source_language": "Croatian",
+      "source_hash": "b2b949ceae2a058826c557466494a2500f7dd09f6b3f7c98fa19cd24b43480a2",
+      "model": "openai/gpt-4.1-mini",
+      "translated_at": "2026-07-27T10:11:28+00:00"
+    },
+    "ted-516289-2026": {
+      "id": "ted-516289-2026",
+      "title_en": "Expert assessment of the ongoing detailed contractor claim according to FIDIC Red Book according to SFDI methodologies for D3 constructions",
+      "description_en": "The subject of the public contract is the preparation of an independent expert opinion on the contractor's financial claims for the D3 constructions 0312/I Kaplice station – Nažidla, 0312/II Nažidla – Dolní Dvořiště, state border and D3 SSÚD Borek, which follow the already recognized time claim. The opinion will focus on verifying the legitimacy, adequacy, and demonstrability of the claims made in accordance with the contract for work and SFDI methodologies. The scope includes assessment of time and financial contexts, evaluation of documents, and preparation of an expert conclusion determining the justified amount of claims according to RED FIDIC.",
+      "source_language": "Czech",
+      "source_hash": "4d935bbc7cf92a0c8329c5927306c369d11e94bff032e9d152dbbcb017296d11",
+      "model": "openai/gpt-4.1-mini",
+      "translated_at": "2026-07-27T10:11:32+00:00"
+    },
+    "ted-516473-2026": {
+      "id": "ted-516473-2026",
+      "title_en": "Emergency Medical Vehicles",
+      "description_en": "The subject of procurement is: EMERGENCY MEDICAL VEHICLES according to the standard HRN EN 1789:2024 or equivalent (Medical vehicles and their equipment) in accordance with the requirements in the technical specification",
+      "source_language": "Croatian",
+      "source_hash": "c365e1a5ffb663b9a889f9d89a7932594ccf334bc46a7e41c1d0630a1e40adcd",
+      "model": "openai/gpt-4.1-mini",
+      "translated_at": "2026-07-27T10:11:43+00:00"
+    },
+    "ted-516169-2026": {
+      "id": "ted-516169-2026",
+      "title_en": "Pipe frame doors (VE035), CVK, DHZC",
+      "description_en": "The Charité University Medicine Berlin, Campus Virchow Clinic (CVK), Augustenburger Platz 1, 13353, is tendering the following construction work for the new building of the German Heart Center of the Charité including emergency department (ZNA) and central sterile supply department (ZSVA), CVK (DHZC): Steel-glass interior door elements 475 units, bullet-resistant interior doors 10 units, bullet-resistant interior windows 5 units. There are special requirements according to the Berlin Tendering and Procurement Act (BerlAVG), see tender documents. Further information can be found in the documents provided on the Charité tender platform (https://vergabeplattform.charite.de).",
+      "source_language": "German",
+      "source_hash": "b6fd2036ffb4c2291fb9793dcfce2d9fd00151644547d752f103507db00bb297",
+      "model": "openai/gpt-4.1-mini",
+      "translated_at": "2026-07-27T10:12:00+00:00"
+    }
+  }
 }
